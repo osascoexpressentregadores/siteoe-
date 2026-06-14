@@ -1,0 +1,15 @@
+CHECKLIST DE REVISÃO FINAL V10
+
+[ ] Abrir Home no desktop
+[ ] Abrir Home no celular
+[ ] Conferir hero e CTA comercial
+[ ] Conferir Serviços / Delivery Próprio Assistido
+[ ] Conferir Entregadores e proteção de parceiro autônomo
+[ ] Conferir Quem Somos e autoridade local
+[ ] Testar busca e filtros do FAQ
+[ ] Testar Fale Conosco e triagem por canal
+[ ] Testar WhatsApp comercial
+[ ] Testar WhatsApp suporte parceiros
+[ ] Conferir /agenda/ sem mexer na lógica
+[ ] Conferir sitemap.xml e robots.txt
+[ ] Confirmar publicação na raiz do domínio

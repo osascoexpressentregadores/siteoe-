@@ -1,0 +1,1233 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Confirmados da Semana | Osasco Express</title>
+<meta name="description" content="Reserve seus pontos por dia, acompanhe suas reservas da semana e avise o suporte quando precisar reabrir um horário.">
+<meta name="theme-color" content="#101827">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Osasco Express">
+<meta property="og:title" content="Confirmados da Semana | Osasco Express">
+<meta property="og:description" content="Agenda digital dos parceiros Osasco Express: escolha seus horários, acompanhe suas reservas e consulte a Central do Parceiro.">
+<meta property="og:url" content="https://www.osascoexpress.com.br/agenda/">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://www.osascoexpress.com.br/agenda/">
+<meta name="application-name" content="Agenda Osasco Express">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Confirmados da Semana | Osasco Express">
+<meta name="twitter:description" content="Reserve seus pontos por dia, acompanhe suas reservas e consulte a Central do Parceiro.">
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#0f172a;--muted:#64748b;--line:#dbe3ee;--dark:#101827;--dark2:#1b2a41;--red:#dc2635;--green:#07966f;--blue:#2563eb;--amber:#b7791f;--soft-red:#fff1f3;--soft-green:#eefaf6;--soft-blue:#eff6ff;--soft-amber:#fff8e8;--r:18px;--shadow:0 12px 32px rgba(15,23,42,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}button,input{font:inherit}.hide{display:none!important}
+.appbar{position:sticky;top:0;z-index:50;background:var(--dark);color:#fff;padding:12px 14px calc(10px + env(safe-area-inset-top));box-shadow:0 2px 14px rgba(0,0,0,.22)}.appbar-inner{max-width:1180px;margin:auto;display:flex;gap:10px;align-items:center}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#e1262f,#7f101b);display:grid;place-items:center;flex:0 0 auto}.brand{min-width:0}.brand h1{font-size:17px;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.brand p{font-size:12px;color:#a9b7cc;margin:3px 0 0}.top-actions{margin-left:auto;display:flex;gap:7px}.topbtn{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);color:#e8eefc;border-radius:12px;padding:10px 12px;font-weight:900;font-size:13px;cursor:pointer;white-space:nowrap}.topbtn.on{background:#f5b43b;border-color:#f5b43b;color:#1d1300}
+.toolbar{position:sticky;top:70px;z-index:45;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.toolbar-inner{max-width:1180px;margin:auto;display:flex;gap:7px;align-items:center;overflow:auto;padding:9px 12px;scrollbar-width:none}.toolbar-inner::-webkit-scrollbar{display:none}.chip{border:1px solid var(--line);background:#fff;color:#334155;border-radius:999px;padding:9px 12px;font-size:13px;font-weight:900;cursor:pointer;white-space:nowrap}.chip.on{background:var(--dark);border-color:var(--dark);color:#fff}.chip.danger{background:#fff1f3;color:var(--red);border-color:#fecdd3}.chip.green{background:#ecfdf5;color:#047857;border-color:#a7f3d0}
+main{max-width:1180px;margin:auto;padding:14px 12px 90px}.hero{background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px;box-shadow:var(--shadow);margin-bottom:12px}.hero h2{margin:0;font-size:21px;letter-spacing:-.03em}.hero p{margin:7px 0 0;color:var(--muted);font-weight:700;line-height:1.45}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:13px}.metric{border:1px solid var(--line);background:#f8fafc;border-radius:16px;padding:12px}.metric b{display:block;font-size:24px;letter-spacing:-.05em}.metric span{font-size:11px;text-transform:uppercase;color:#64748b;font-weight:900;letter-spacing:.05em}.section-title{display:flex;align-items:center;gap:10px;margin:16px 0 10px}.section-title h3{margin:0;font-size:15px;text-transform:uppercase;letter-spacing:.06em}.section-title span{margin-left:auto;color:#64748b;font-weight:800;font-size:12px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:12px}.reserve-card{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}.reserve-card[data-color=red]{border-top:5px solid var(--red)}.reserve-card[data-color=green]{border-top:5px solid var(--green)}.reserve-card[data-color=blue]{border-top:5px solid var(--blue)}.reserve-card[data-color=amber]{border-top:5px solid var(--amber)}.card-head{padding:14px 14px 11px;border-bottom:1px solid var(--line);background:#fbfcfe;display:flex;gap:10px;align-items:flex-start}.dot{width:11px;height:11px;border-radius:50%;margin-top:5px;flex:0 0 auto}.reserve-card[data-color=red] .dot{background:var(--red)}.reserve-card[data-color=green] .dot{background:var(--green)}.reserve-card[data-color=blue] .dot{background:var(--blue)}.reserve-card[data-color=amber] .dot{background:var(--amber)}.card-title{min-width:0;flex:1}.card-title b{display:block;font-size:15px;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.card-title small{display:block;margin-top:3px;color:#64748b;font-weight:800}.totalpill{border-radius:999px;background:#f1f5f9;color:#334155;font-size:12px;font-weight:1000;padding:6px 10px;white-space:nowrap}.day-grid{padding:11px;display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.day-pill{border:1px solid var(--line);background:#fff;border-radius:13px;padding:8px 4px;text-align:center;min-width:0}.day-pill b{display:block;font-size:11px;text-transform:uppercase}.day-pill span{display:block;margin-top:3px;font-size:12px;font-weight:1000}.day-pill.open{border-color:#a7f3d0;background:#f0fdf4;color:#065f46}.day-pill.full{border-color:#e2e8f0;background:#f8fafc;color:#94a3b8}.day-pill.none{opacity:.38}.card-actions{padding:0 11px 12px;display:flex;gap:8px}.btn{border:0;border-radius:14px;padding:12px 14px;font-weight:1000;cursor:pointer;min-height:46px}.btn.primary{background:var(--dark);color:#fff;flex:1}.btn.light{background:#eef2f7;color:#334155}.btn.green{background:var(--green);color:#fff}.btn.danger{background:#dc2626;color:#fff}.btn.block{width:100%}.empty{background:#fff;border:1px dashed #cbd5e1;border-radius:18px;padding:18px;color:#64748b;font-weight:800;line-height:1.45}.admin-only{display:none}.admin .admin-only{display:initial}.booking-list{display:grid;gap:8px}.booking{border:1px solid #a7f3d0;background:#f0fdf4;border-radius:16px;padding:12px;display:flex;gap:10px;align-items:center}.booking b{display:block}.booking small{display:block;color:#64748b;font-weight:800;margin-top:3px}.booking .grow{flex:1;min-width:0}.mini{border:0;border-radius:11px;padding:9px 10px;background:#fff;color:#334155;border:1px solid var(--line);font-weight:900;cursor:pointer;white-space:nowrap}.mini.red{background:#fee2e2;color:#b91c1c;border-color:#fecaca}
+.modal{position:fixed;inset:0;background:rgba(3,8,20,.64);backdrop-filter:blur(5px);z-index:100;display:none;align-items:flex-end;justify-content:center}.modal.on{display:flex}.box{background:#fff;width:100%;max-width:560px;border-radius:24px 24px 0 0;padding:16px 16px calc(16px + env(safe-area-inset-bottom));box-shadow:0 -24px 70px rgba(0,0,0,.28);max-height:92vh;overflow:auto}.box.wide{max-width:820px}.handle{width:42px;height:5px;background:#d7dee9;border-radius:99px;margin:0 auto 14px}.box h3{margin:0;font-size:21px;letter-spacing:-.03em}.box p{margin:6px 0 14px;color:#64748b;line-height:1.45;font-weight:700}.field{display:grid;gap:6px;margin:10px 0}.field label{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:#475569;font-weight:1000}.field input{border:1px solid var(--line);border-radius:14px;padding:13px;outline:none;font-size:16px}.select-days{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:10px}.day-choice{border:1px solid var(--line);background:#fff;border-radius:16px;padding:12px;text-align:left;cursor:pointer;min-height:76px}.day-choice b{display:block;font-size:14px}.day-choice small{display:block;color:#64748b;font-weight:800;margin-top:3px;line-height:1.25}.day-choice.selected{border-color:#07966f;background:#ecfdf5;color:#065f46}.day-choice.blocked{background:#f8fafc;color:#94a3b8;cursor:not-allowed}.day-choice.full{background:#fff7ed;border-color:#fed7aa;color:#9a3412}.modal-actions{display:flex;gap:8px;margin-top:14px}.modal-actions .btn{flex:1}.toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%) translateY(20px);background:#07111f;color:#fff;border-radius:999px;padding:12px 16px;font-weight:900;opacity:0;pointer-events:none;transition:.2s;z-index:200;max-width:92vw;text-align:center}.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}.edit-table{display:grid;gap:10px}.edit-row{border:1px solid var(--line);border-radius:16px;padding:12px;background:#f8fafc}.edit-row b{display:block;margin-bottom:8px}.edit-days{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}.edit-days label{font-size:10px;font-weight:1000;color:#64748b;text-transform:uppercase}.edit-days input{width:100%;border:1px solid var(--line);border-radius:9px;padding:8px 4px;text-align:center;font-weight:900}
+@media(min-width:780px){.modal{align-items:center}.box{border-radius:24px;padding:22px}.handle{display:none}.select-days{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:760px){.brand h1{font-size:15px;max-width:210px}.brand p{font-size:11px}.topbtn{padding:9px 10px}.topbtn .txt{display:none}.toolbar{top:68px}.metrics{grid-template-columns:repeat(3,1fr)}.metric{padding:10px}.metric b{font-size:21px}.metric span{font-size:10px}.cards{grid-template-columns:1fr;gap:10px}.reserve-card{border-radius:19px}.day-grid{gap:5px;padding:10px}.day-pill{padding:7px 2px;border-radius:11px}.day-pill b{font-size:10px}.day-pill span{font-size:11px}.card-actions{position:relative}.select-days{grid-template-columns:1fr 1fr}.edit-days{grid-template-columns:repeat(4,1fr)}.hero h2{font-size:19px}}
+@media print{.appbar,.toolbar,.admin-only,.modal,.toast,.card-actions{display:none!important}body{background:#fff}main{max-width:none}.reserve-card{box-shadow:none;break-inside:avoid}.cards{grid-template-columns:repeat(2,1fr)}}
+
+/* ===== PATCH V9 — saída segura de telas + identidade visual de clientes ===== */
+.box{position:relative}
+.modal-close{
+  position:sticky; top:0; margin-left:auto; margin-bottom:6px; z-index:3;
+  display:flex; align-items:center; justify-content:center; gap:6px;
+  width:max-content; min-width:44px; height:38px; padding:0 12px;
+  border:1px solid var(--line); border-radius:999px;
+  background:rgba(255,255,255,.94); color:#0f172a;
+  font-weight:1000; cursor:pointer; box-shadow:0 6px 20px rgba(15,23,42,.08);
+}
+.modal-close:before{content:'×';font-size:22px;line-height:1;margin-top:-2px}.modal-close span{font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.modal-open{overflow:hidden}.modal .box{padding-top:10px}
+.client-mark{width:48px;height:48px;border-radius:16px;border:1px solid var(--line);background:#fff;display:grid;place-items:center;flex:0 0 auto;overflow:hidden;box-shadow:0 2px 10px rgba(15,23,42,.06)}
+.client-mark img{width:100%;height:100%;object-fit:contain;padding:5px}.client-mark .emoji{font-size:25px;line-height:1}.card-head{align-items:center}.reserve-card[data-color=red] .client-mark{background:#fff5f6;border-color:#fecdd3}.reserve-card[data-color=green] .client-mark{background:#ecfdf5;border-color:#a7f3d0}.reserve-card[data-color=blue] .client-mark{background:#eff6ff;border-color:#bfdbfe}.reserve-card[data-color=amber] .client-mark{background:#fffbeb;border-color:#fde68a}
+.chip.client-chip{display:flex;align-items:center;gap:7px}.chip-logo{width:22px;height:22px;border-radius:50%;background:#fff;border:1px solid var(--line);object-fit:contain;padding:2px;flex:0 0 auto}.chip-emoji{font-size:15px;line-height:1}
+.safe-note{margin:8px 0 0;color:#64748b;font-size:12px;font-weight:800;line-height:1.35}.day-choice.blocked small,.day-choice.full small{font-weight:900}
+@media(max-width:760px){.client-mark{width:44px;height:44px;border-radius:14px}.card-head{padding:12px}.card-title b{font-size:14px}.modal-close{height:40px;padding:0 13px}.modal-close span{display:inline}.box h3{padding-right:48px}.chip-logo{width:20px;height:20px}}
+
+
+/* ===== PATCH V10 — revisão UX mobile + notebook ===== */
+:root{--touch:48px}
+html,body{max-width:100%;overflow-x:hidden}.appbar{min-height:68px}.appbar-inner,.toolbar-inner,main{width:100%}
+.hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(320px,.8fr);gap:14px;align-items:center}.hero-copy{min-width:0}.hero-copy h2{margin:0;font-size:22px;letter-spacing:-.035em}.hero-copy p{margin:7px 0 0;color:var(--muted);font-weight:800;line-height:1.42}.metrics{margin-top:0}.btn,.chip,.day-pill,.day-choice,.mini,.topbtn{touch-action:manipulation;-webkit-tap-highlight-color:transparent}.btn:focus-visible,.chip:focus-visible,.day-pill:focus-visible,.day-choice:focus-visible,.mini:focus-visible,.topbtn:focus-visible{outline:3px solid rgba(37,99,235,.28);outline-offset:2px}.day-pill:disabled{cursor:not-allowed}.reserve-card{transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}.reserve-card:active{transform:scale(.995)}.card-head{cursor:pointer}.card-title small:after{content:' · toque para escolher';font-weight:900;color:#94a3b8}.day-pill{cursor:pointer}.day-pill.open{box-shadow:inset 0 0 0 1px rgba(7,150,111,.18)}.day-pill.full{cursor:not-allowed}.day-pill.none{cursor:not-allowed}.card-actions .btn.primary:after{content:' →'}
+.modal-actions{position:sticky;bottom:0;background:linear-gradient(to top,#fff 72%,rgba(255,255,255,0));padding-top:10px;padding-bottom:max(0px,env(safe-area-inset-bottom));z-index:2}.select-days{padding-bottom:4px}.hint{background:#f8fafc;border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin:12px 0 0!important}.day-choice{position:relative}.day-choice.selected:after{content:'✓';position:absolute;right:10px;top:10px;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#07966f;color:#fff;font-weight:1000}.day-choice.blocked,.day-choice.full{opacity:.75}.booking{align-items:flex-start}.booking .mini{align-self:center}.toast{box-shadow:0 16px 40px rgba(0,0,0,.24)}
+@media(min-width:761px) and (max-width:1120px){main{padding-left:18px;padding-right:18px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){
+  body{background:#f5f7fb}.appbar{padding:10px 12px calc(9px + env(safe-area-inset-top));min-height:66px}.appbar-inner{gap:9px}.logo{width:40px;height:40px;border-radius:13px}.brand h1{font-size:14px;max-width:170px}.brand p{font-size:11px;max-width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.top-actions{gap:6px}.topbtn{min-height:42px;border-radius:14px;padding:9px 10px;font-size:12px}
+  .toolbar{top:66px}.toolbar-inner{padding:8px 10px;gap:6px}.chip{min-height:38px;padding:8px 11px;font-size:12px}.chip.client-chip{gap:5px}.chip-logo{width:19px;height:19px}
+  main{padding:10px 10px 86px}.hero{display:block;border-radius:20px;padding:13px;margin-bottom:10px}.hero-copy h2{font-size:18px;line-height:1.12}.hero-copy p{font-size:12px;line-height:1.36;margin-top:6px}.metrics{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:10px}.metric{border-radius:14px;padding:9px 7px}.metric b{font-size:20px}.metric span{font-size:9px;letter-spacing:.04em;line-height:1.12}
+  .section-title{margin:12px 0 8px}.section-title h3{font-size:13px}.section-title span{font-size:11px}
+  .cards{gap:10px}.reserve-card{border-radius:20px;box-shadow:0 8px 22px rgba(15,23,42,.07)}.card-head{padding:11px;gap:9px}.client-mark{width:42px;height:42px}.card-title b{font-size:13px;letter-spacing:.03em}.card-title small{font-size:12px;margin-top:2px}.card-title small:after{content:''}.totalpill{font-size:12px;padding:6px 9px}.day-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;padding:10px}.day-pill{min-height:48px;border-radius:13px;padding:7px 3px}.day-pill b{font-size:10px}.day-pill span{font-size:12px}.card-actions{padding:0 10px 11px}.btn{min-height:48px;border-radius:14px;font-size:14px}
+  .modal{align-items:flex-end}.box{border-radius:22px 22px 0 0;max-height:90dvh;padding:10px 14px calc(14px + env(safe-area-inset-bottom));overscroll-behavior:contain}.modal-close{height:38px;min-width:42px;margin-bottom:4px}.box h3{font-size:19px;line-height:1.15;padding-right:0}.box p{font-size:13px;line-height:1.38;margin-bottom:10px}.field{margin:8px 0}.field input{min-height:48px}.select-days{grid-template-columns:1fr;gap:7px}.day-choice{min-height:62px;border-radius:15px;padding:11px 46px 10px 12px}.day-choice b{font-size:13px}.day-choice small{font-size:12px}.modal-actions{gap:7px;margin-top:10px}.modal-actions .btn{padding-left:9px;padding-right:9px}.booking{border-radius:15px;padding:11px;gap:8px}.booking b{font-size:14px}.booking small{font-size:12px}.mini{padding:9px 10px;border-radius:11px;font-size:12px}.edit-row{padding:10px}.edit-days{grid-template-columns:repeat(2,1fr);gap:8px}.edit-days input{min-height:44px}.toast{bottom:max(14px,env(safe-area-inset-bottom));border-radius:18px;width:calc(100vw - 28px);max-width:420px;line-height:1.25}
+}
+@media(max-width:380px){.brand h1{max-width:135px}.brand p{max-width:135px}.topbtn{padding:8px 8px}.logo{width:38px;height:38px}.metric b{font-size:18px}.day-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.card-title b{font-size:12px}.totalpill{font-size:11px}.modal-actions{flex-direction:column}.modal-actions .btn{width:100%}}
+
+
+/* ===== PATCH V11 — reabertura múltipla prática ===== */
+.reopen-tools{display:flex;gap:8px;margin:10px 0 10px}.reopen-tools .mini{flex:1;min-height:42px}.booking.reopen-selectable{cursor:pointer;position:relative;padding-left:12px}.checkdot{width:26px;height:26px;border-radius:9px;border:2px solid #cbd5e1;background:#fff;display:grid;place-items:center;flex:0 0 auto;font-weight:1000;color:#fff;margin-top:2px}.booking.selected{background:#eff6ff;border-color:#93c5fd}.booking.selected .checkdot{background:#2563eb;border-color:#2563eb}.booking.selected .checkdot:after{content:'✓'}.bulk-bar{position:sticky;bottom:0;background:linear-gradient(to top,#fff 80%,rgba(255,255,255,0));padding-top:10px;margin-top:10px;display:grid;gap:8px;z-index:2}.bulk-count{font-size:12px;font-weight:1000;color:#475569;text-align:center}.reopen-summary{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:12px;margin:10px 0 0;display:grid;gap:6px}.reopen-summary div{font-size:13px;font-weight:900;color:#334155}.reopen-summary small{display:block;color:#64748b;font-weight:800;margin-top:2px}.danger-note{background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;border-radius:14px;padding:10px 12px!important;font-size:13px!important;font-weight:900!important}
+@media(max-width:760px){.reopen-tools{gap:7px}.booking.reopen-selectable{padding:12px}.checkdot{width:28px;height:28px}.bulk-bar .btn{min-height:52px}.reopen-summary{max-height:220px;overflow:auto}}
+
+
+/* ===== PATCH V12 — entregador: 0/x + diária + mobile compacto ===== */
+.day-pill{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:58px}
+.day-pill .occ{display:block;margin-top:1px;font-size:12px;font-weight:1000;line-height:1}
+.day-pill .rate{display:block;margin-top:2px;font-size:10px;font-weight:1000;color:#0f766e;line-height:1;white-space:nowrap}
+.day-pill.full .rate,.day-pill.none .rate{color:#94a3b8}
+.card-actions{padding:0 11px 11px;justify-content:flex-end}
+.card-actions .btn.primary{flex:0 0 auto;min-height:38px;padding:9px 13px;border-radius:12px;font-size:12px;line-height:1}
+.day-choice{display:flex;flex-direction:column;gap:5px;justify-content:center}
+.day-choice .choice-top{display:flex;align-items:center;gap:6px;justify-content:space-between}
+.day-choice .choice-occ{font-weight:1000}
+.day-choice .choice-rate{font-size:12px;font-weight:1000;color:#0f766e;white-space:nowrap}
+.day-choice.blocked .choice-rate,.day-choice.full .choice-rate{color:#94a3b8}
+.mine-summary{border:1px solid #bbf7d0;background:#f0fdf4;color:#065f46;border-radius:16px;padding:12px;margin:0 0 10px;font-weight:900;display:grid;gap:3px}
+.mine-summary b{font-size:18px;letter-spacing:-.02em}.mine-summary span{font-size:12px;color:#047857;text-transform:uppercase;letter-spacing:.04em}
+.booking .money{font-weight:1000;color:#047857;white-space:nowrap;margin-left:auto;font-size:13px}
+.reopen-summary div{display:flex;flex-direction:column;gap:2px}.reopen-summary small{font-weight:800;color:#64748b}.reopen-summary .money{color:#047857;font-weight:1000;font-size:12px}.danger-note strong{color:#0f172a}
+@media(max-width:760px){
+  .card-actions{padding:0 10px 10px}.card-actions .btn.primary{min-height:36px;padding:8px 12px;font-size:12px;border-radius:11px}
+  .day-grid{grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}.day-pill{min-height:55px;padding:6px 1px}.day-pill b{font-size:9px}.day-pill .occ{font-size:11px}.day-pill .rate{font-size:9px}
+  .select-days{gap:7px}.day-choice{min-height:74px;padding:10px}.day-choice b{font-size:13px}.day-choice .choice-rate{font-size:11px}.day-choice small{font-size:12px}
+}
+
+
+
+/* ===== PATCH V16 — filtros funcionais + Minhas reservas clara ===== */
+.toolbar-inner{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(190px,280px);gap:10px!important;align-items:center;overflow:visible!important}
+.filter-days{display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;min-width:0;padding:1px 0}.filter-days::-webkit-scrollbar{display:none}
+.filter-days .chip{padding:8px 11px;min-height:38px;font-size:12px;flex:0 0 auto}.filter-days .chip:first-child{padding-left:14px;padding-right:14px}
+.filter-client{display:flex;align-items:center;gap:8px;min-width:0}.filter-client span{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#64748b;font-weight:1000;white-space:nowrap}.client-select{width:100%;border:1px solid var(--line);background:#fff;color:#0f172a;border-radius:999px;min-height:38px;padding:0 34px 0 13px;font-weight:1000;outline:none;appearance:auto}.filter-admin{grid-column:1/-1;display:flex;gap:7px;overflow:auto;padding-top:1px}.filter-admin .chip{min-height:36px;padding:8px 11px;font-size:12px}
+.my-top .txt{display:inline!important}.my-shortcut{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:11px 12px;margin:-2px 0 12px;box-shadow:0 6px 18px rgba(15,23,42,.05)}.my-shortcut b{display:block;font-size:14px}.my-shortcut span{display:block;margin-top:2px;color:#64748b;font-size:12px;font-weight:800}.my-shortcut button{border:0;background:var(--dark);color:#fff;border-radius:13px;padding:10px 12px;font-weight:1000;white-space:nowrap;cursor:pointer;min-height:42px}
+.my-day-title{font-size:12px;font-weight:1000;text-transform:uppercase;letter-spacing:.06em;color:#64748b;margin:12px 2px 6px}.my-res-card{display:flex;align-items:center;gap:10px;border:1px solid var(--line);background:#fff;border-radius:16px;padding:10px;margin-bottom:8px;box-shadow:0 4px 12px rgba(15,23,42,.04)}.my-client-logo{width:38px;height:38px;border-radius:13px;background:#f8fafc;border:1px solid var(--line);display:grid;place-items:center;overflow:hidden;flex:0 0 auto}.my-client-logo img{width:100%;height:100%;object-fit:contain;padding:4px}.my-client-logo .emoji{font-size:22px}.my-info{min-width:0;flex:1}.my-info b{display:block;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.my-info small{display:block;color:#64748b;font-weight:900;margin-top:3px}.my-reopen{border:1px solid #fecaca;background:#fff1f3;color:#b91c1c;border-radius:12px;padding:9px 10px;font-size:12px;font-weight:1000;cursor:pointer;white-space:nowrap;min-height:38px}
+@media(max-width:760px){.toolbar-inner{grid-template-columns:1fr!important;gap:7px!important;padding:7px 10px 8px!important}.filter-days{padding-bottom:1px}.filter-days .chip{min-height:34px;padding:7px 10px;font-size:11px}.filter-days .chip:first-child{padding-left:13px;padding-right:13px}.filter-client{width:100%}.filter-client span{display:none}.client-select{min-height:38px;border-radius:13px}.my-shortcut{border-radius:16px;padding:10px;margin-bottom:10px}.my-shortcut span{font-size:11px}.my-shortcut button{padding:9px 10px;font-size:12px;min-height:38px}.topbtn.my-top{padding-left:11px;padding-right:11px}.my-res-card{padding:9px;gap:9px}.my-client-logo{width:36px;height:36px}.my-reopen{padding:8px 9px;font-size:11px;min-height:36px}}
+
+
+
+/* ===== PATCH V20 — PAINEL ADMIN OPERACIONAL ===== */
+body.admin .hero{border-color:#cbd5e1;background:linear-gradient(180deg,#fff,#fbfdff)}
+.admin-kicker{display:inline-flex;align-items:center;gap:7px;background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:1000;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+.admin-panel{display:grid;gap:12px}.admin-topline{display:flex;gap:10px;align-items:center;justify-content:space-between;margin:4px 0 10px}.admin-title{display:grid;gap:2px}.admin-title b{font-size:15px;text-transform:uppercase;letter-spacing:.06em}.admin-title span{font-size:12px;color:var(--muted);font-weight:800}.admin-sync{font-size:12px;font-weight:900;color:#047857;background:#ecfdf5;border:1px solid #a7f3d0;border-radius:999px;padding:7px 10px;white-space:nowrap}.admin-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:12px}.admin-card{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden;position:relative}.admin-card[data-tone=ok]{border-top:5px solid var(--green)}.admin-card[data-tone=risk]{border-top:5px solid var(--red)}.admin-card[data-tone=warn]{border-top:5px solid var(--amber)}.admin-card[data-tone=off]{border-top:5px solid #94a3b8}.admin-card-head{display:flex;align-items:center;gap:10px;padding:13px 13px 10px;background:#fbfcfe;border-bottom:1px solid var(--line)}.admin-logo{width:46px;height:46px;border:1px solid var(--line);border-radius:15px;background:#fff;display:grid;place-items:center;overflow:hidden;flex:0 0 auto}.admin-logo img{width:100%;height:100%;object-fit:contain;padding:5px}.admin-logo .emoji{font-size:25px}.admin-main{min-width:0;flex:1}.admin-main b{display:block;font-size:14px;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.admin-main small{display:block;color:#64748b;font-weight:900;margin-top:3px}.admin-occ{border-radius:999px;background:#f1f5f9;border:1px solid var(--line);color:#334155;font-size:13px;font-weight:1000;padding:6px 10px;white-space:nowrap}.admin-card[data-tone=ok] .admin-occ{background:#ecfdf5;color:#047857;border-color:#a7f3d0}.admin-card[data-tone=risk] .admin-occ{background:#fff1f3;color:#b91c1c;border-color:#fecaca}.admin-card[data-tone=warn] .admin-occ{background:#fff8e8;color:#92400e;border-color:#fed7aa}.admin-body{padding:12px}.admin-progress{height:9px;background:#e8eef5;border-radius:999px;overflow:hidden}.admin-progress span{display:block;height:100%;border-radius:999px;background:#64748b;width:0%}.admin-card[data-tone=ok] .admin-progress span{background:var(--green)}.admin-card[data-tone=risk] .admin-progress span{background:var(--red)}.admin-card[data-tone=warn] .admin-progress span{background:var(--amber)}.admin-status{margin:9px 0 12px;font-size:12px;font-weight:1000}.admin-card[data-tone=ok] .admin-status{color:#047857}.admin-card[data-tone=risk] .admin-status{color:#b91c1c}.admin-card[data-tone=warn] .admin-status{color:#92400e}.admin-people{display:grid;gap:6px}.admin-person{display:flex;align-items:center;gap:8px;min-height:31px;border:1px solid #e2e8f0;background:#f8fafc;border-radius:11px;padding:6px 8px;font-size:12px;font-weight:900;color:#64748b}.admin-person.filled{background:#f0fdf4;border-color:#a7f3d0;color:#065f46}.admin-person .num{width:18px;height:18px;border-radius:50%;display:grid;place-items:center;background:#fff;border:1px solid currentColor;font-size:10px;flex:0 0 auto}.admin-more{border:1px dashed #cbd5e1;background:#fff;border-radius:11px;padding:8px;font-size:12px;color:#64748b;font-weight:1000;text-align:center}.admin-actions{display:flex;gap:7px;padding:0 12px 12px}.admin-actions .mini{flex:1;min-height:38px}.mini.dark{background:#101827;color:#fff;border-color:#101827}.mini.green{background:#059669;color:#fff;border-color:#059669}.mini.amber{background:#fffbeb;color:#92400e;border-color:#fed7aa}.admin-week-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:12px}.admin-week-card{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}.admin-week-head{display:flex;align-items:center;gap:10px;padding:13px;background:#fbfcfe;border-bottom:1px solid var(--line)}.admin-week-days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;padding:11px}.admin-daybox{border:1px solid var(--line);border-radius:13px;min-height:62px;padding:7px 4px;text-align:center;background:#f8fafc;cursor:pointer}.admin-daybox b{display:block;font-size:10px;text-transform:uppercase;color:#64748b}.admin-daybox span{display:block;margin-top:5px;font-size:13px;font-weight:1000}.admin-daybox.ok{background:#ecfdf5;border-color:#a7f3d0;color:#047857}.admin-daybox.warn{background:#fff8e8;border-color:#fed7aa;color:#92400e}.admin-daybox.risk{background:#fff1f3;border-color:#fecaca;color:#b91c1c}.admin-daybox.off{opacity:.42}.admin-gargalos{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:10px}.gargalo-card{background:#fff;border:1px solid var(--line);border-left:5px solid var(--red);border-radius:18px;padding:12px;box-shadow:0 6px 18px rgba(15,23,42,.05);display:grid;gap:8px}.gargalo-card.warn{border-left-color:var(--amber)}.gargalo-top{display:flex;gap:9px;align-items:center}.gargalo-top .admin-logo{width:38px;height:38px;border-radius:13px}.gargalo-info{min-width:0;flex:1}.gargalo-info b{display:block;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.gargalo-info small{display:block;color:#64748b;font-weight:900;margin-top:2px}.gargalo-miss{font-size:13px;font-weight:1000;color:#b91c1c}.gargalo-card.warn .gargalo-miss{color:#92400e}.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:7px;margin-top:10px}.team-item{border:1px solid #a7f3d0;background:#f0fdf4;border-radius:12px;padding:8px;font-size:13px;font-weight:900;color:#065f46}.team-item.open{border-color:#e2e8f0;background:#f8fafc;color:#64748b}.team-message{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:12px;white-space:pre-wrap;font-size:14px;font-weight:800;line-height:1.5;margin-top:10px}.print-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;margin-top:10px}.print-team-cols{columns:2 190px;column-gap:28px}.print-team-cols div{break-inside:avoid;font-size:13px;font-weight:900;margin:0 0 6px}.admin .my-shortcut{display:none}.admin .card-actions{display:flex}
+@media(max-width:760px){.admin-topline{align-items:flex-start}.admin-sync{font-size:11px}.admin-cards,.admin-week-grid,.admin-gargalos{grid-template-columns:1fr}.admin-card-head{padding:11px}.admin-logo{width:42px;height:42px}.admin-week-days{grid-template-columns:repeat(4,1fr)}.admin-actions{flex-direction:column}.team-grid{grid-template-columns:1fr}.print-team-cols{columns:1}.filter-admin{flex-wrap:nowrap}}
+
+
+
+/* ===== PATCH V22 — feedback seguro no modal do entregador ===== */
+.reserve-inline-action{margin-top:6px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #cbd5e1;background:#fff;color:#0f172a;border-radius:999px;padding:7px 10px;font-size:11px;font-weight:1000;cursor:pointer}
+.day-choice.blocked.already-mine{background:#f8fafc;border-color:#cbd5e1;color:#64748b;opacity:.92}
+.day-choice.blocked.already-mine small{color:#64748b}
+.day-choice.blocked.conflict-day{background:#fff7ed;border-color:#fed7aa;color:#9a3412;opacity:.9}
+.reserve-feedback{background:#eff6ff;border:1px solid #bfdbfe;color:#1e3a8a;border-radius:14px;padding:10px 12px;margin:10px 0 0;font-size:13px;font-weight:900;line-height:1.35}
+.reserve-feedback.warn{background:#fff7ed;border-color:#fed7aa;color:#9a3412}
+.reserve-feedback.ok{background:#ecfdf5;border-color:#a7f3d0;color:#065f46}
+@media(max-width:760px){#reserveModal .box{padding-bottom:calc(18px + env(safe-area-inset-bottom));}#reserveDays{padding-bottom:calc(96px + env(safe-area-inset-bottom));}.modal-actions{padding-bottom:calc(8px + env(safe-area-inset-bottom));}}
+
+
+/* ===== PATCH V23 — reserva já feita reconhecida no próprio ponto ===== */
+.day-pill.mine{border-color:#07966f;background:#ecfdf5;color:#065f46;box-shadow:inset 0 0 0 1px rgba(7,150,111,.16)}
+.day-pill.mine .mine-badge{display:block;margin-top:2px;font-size:9px;font-weight:1000;color:#047857;line-height:1;white-space:nowrap}
+.day-choice.already-mine{border-color:#07966f;background:#ecfdf5;color:#065f46;opacity:1;cursor:default}
+.day-choice.already-mine small{color:#047857}
+.reserve-day-actions{display:flex;gap:7px;margin-top:8px;flex-wrap:wrap}
+.reserve-day-actions .mini{min-height:34px;padding:7px 10px;font-size:11px;border-radius:10px}
+.reserve-day-actions .mini.red{background:#fff1f3;color:#b91c1c;border-color:#fecaca}
+.reserve-feedback.ok{border:1px solid #a7f3d0;background:#f0fdf4;color:#065f46;border-radius:14px;padding:10px 12px;font-size:13px;font-weight:900;line-height:1.35}
+.reserve-feedback.warn{border:1px solid #fed7aa;background:#fff7ed;color:#9a3412;border-radius:14px;padding:10px 12px;font-size:13px;font-weight:900;line-height:1.35}
+@media(max-width:760px){.day-pill.mine .mine-badge{font-size:8px}.reserve-day-actions .mini{font-size:11px}}
+
+/* PATCH V24 — admin filtros e notificações */
+.admin-inline-select{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;min-height:36px;padding:0 8px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#64748b;font-weight:1000;white-space:nowrap}.admin-inline-select select{border:0;background:transparent;outline:0;font-weight:1000;color:#0f172a;min-height:32px}.admin-week-card .admin-daybox{position:relative}.admin-week-card .admin-daybox:after{content:'ver';position:absolute;right:6px;bottom:4px;font-size:8px;font-weight:1000;color:#94a3b8;text-transform:uppercase}.admin-panel .empty strong{color:#0f172a}
+@media(max-width:760px){.admin-inline-select{width:100%;justify-content:space-between;border-radius:13px;padding:0 10px}.admin-inline-select select{flex:1}.filter-admin{display:grid!important;grid-template-columns:1fr 1fr;gap:7px}.filter-admin .admin-inline-select{grid-column:1/-1}.filter-admin .chip{width:100%}}
+
+
+
+/* PATCH V30 — alertas internos admin + reabertura assistida */
+.admin-alerts{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:12px;display:grid;gap:8px}
+.admin-alerts-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.admin-alerts-head b{font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+.admin-alerts-head span{font-size:11px;color:#64748b;font-weight:900}
+.admin-alert-list{display:grid;gap:7px}
+.admin-alert{border:1px solid #e2e8f0;background:#f8fafc;border-radius:14px;padding:9px 10px;display:flex;gap:9px;align-items:flex-start}
+.admin-alert.reabertura{background:#fff7ed;border-color:#fed7aa}
+.admin-alert.reserva{background:#f0fdf4;border-color:#a7f3d0}
+.admin-alert-icon{width:28px;height:28px;border-radius:10px;display:grid;place-items:center;background:#fff;border:1px solid currentColor;font-size:14px;flex:0 0 auto}
+.admin-alert-body{min-width:0;flex:1}
+.admin-alert-body b{display:block;font-size:13px}
+.admin-alert-body small{display:block;margin-top:2px;color:#64748b;font-weight:800;line-height:1.25}
+.admin-alert-time{font-size:10px;color:#64748b;font-weight:1000;white-space:nowrap}
+@media(max-width:760px){.admin-alert{padding:9px}.admin-alert-time{display:none}.admin-alerts{border-radius:18px}.admin-alerts-head{align-items:flex-start;flex-direction:column;gap:2px}}
+
+
+
+/* ===== PATCH V31 — impressão operacional admin ===== */
+.admin-print-actions{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px}.admin-print-actions .mini{min-height:38px}.print-sheet{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;color:#0f172a}.print-head{display:flex;justify-content:space-between;gap:16px;border-bottom:2px solid #0f172a;padding-bottom:12px;margin-bottom:14px}.print-head h2{margin:0;font-size:22px;letter-spacing:-.03em}.print-head p{margin:4px 0 0;color:#475569;font-weight:800}.print-meta{text-align:right;color:#475569;font-weight:900;font-size:12px;line-height:1.45}.print-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:12px 0 16px}.print-metric{border:1px solid #cbd5e1;border-radius:12px;padding:10px;background:#f8fafc}.print-metric b{display:block;font-size:20px}.print-metric span{font-size:10px;text-transform:uppercase;font-weight:1000;color:#64748b}.print-day-title{font-size:16px;text-transform:uppercase;letter-spacing:.05em;margin:18px 0 8px;border-bottom:1px solid #cbd5e1;padding-bottom:6px}.print-slot{break-inside:avoid;border:1px solid #cbd5e1;border-radius:14px;margin:8px 0 12px;overflow:hidden}.print-slot-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;background:#f8fafc;border-bottom:1px solid #cbd5e1}.print-slot-head b{font-size:15px}.print-slot-head small{display:block;color:#475569;font-weight:900;margin-top:2px}.print-occ{font-weight:1000;border:1px solid #94a3b8;border-radius:999px;padding:5px 10px;white-space:nowrap}.print-status{font-weight:1000;font-size:12px;margin:8px 12px}.print-status.ok{color:#047857}.print-status.warn{color:#92400e}.print-status.risk{color:#b91c1c}.print-people{padding:0 12px 12px;columns:2;column-gap:24px}.print-person{break-inside:avoid;padding:3px 0;font-size:13px;font-weight:800}.print-person.open{color:#b91c1c}.print-week-table{width:100%;border-collapse:collapse;font-size:12px}.print-week-table th,.print-week-table td{border:1px solid #cbd5e1;padding:8px;text-align:center}.print-week-table th:first-child,.print-week-table td:first-child{text-align:left}.print-week-table th{background:#f1f5f9}.print-week-table .ok{color:#047857;font-weight:1000}.print-week-table .warn{color:#92400e;font-weight:1000}.print-week-table .risk{color:#b91c1c;font-weight:1000}.print-week-table .off{color:#94a3b8}.print-note{margin-top:14px;border-top:1px solid #cbd5e1;padding-top:10px;color:#64748b;font-size:11px;font-weight:800}
+@media(max-width:760px){.print-summary{grid-template-columns:repeat(2,1fr)}.print-head{display:block}.print-meta{text-align:left;margin-top:8px}.print-people{columns:1}.admin-print-actions{display:grid;grid-template-columns:1fr 1fr}.admin-print-actions .mini{width:100%}}
+@media print{body.print-admin{background:#fff!important}body.print-admin .appbar,body.print-admin .toolbar,body.print-admin main,body.print-admin .toast,body.print-admin .modal:not(#adminPrintModal){display:none!important}body.print-admin #adminPrintModal{display:block!important;position:static!important;inset:auto!important;background:#fff!important;backdrop-filter:none!important}body.print-admin #adminPrintModal .box{max-width:none!important;width:auto!important;border-radius:0!important;box-shadow:none!important;max-height:none!important;overflow:visible!important;padding:0!important}body.print-admin #adminPrintModal .handle,body.print-admin #adminPrintModal .modal-close,body.print-admin #adminPrintModal h3,body.print-admin #adminPrintModal p.print-modal-intro,body.print-admin #adminPrintModal .admin-print-actions,body.print-admin #adminPrintModal .modal-actions{display:none!important}.print-sheet{border:0!important;border-radius:0!important;padding:0!important}.print-head{margin-top:0}.print-summary{grid-template-columns:repeat(4,1fr)}.print-people{columns:3}.print-slot{page-break-inside:avoid}.print-day-title{page-break-after:avoid}}
+
+
+
+/* ===== V38 — Central do Parceiro / copy final operacional ===== */
+.help-shortcut{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:11px 12px;margin:-2px 0 12px;box-shadow:0 6px 18px rgba(15,23,42,.05)}
+.help-shortcut b{display:block;font-size:14px}.help-shortcut span{display:block;margin-top:2px;color:#64748b;font-size:12px;font-weight:800}.help-shortcut button{border:0;background:#dc2635;color:#fff;border-radius:13px;padding:10px 12px;font-weight:1000;white-space:nowrap;cursor:pointer;min-height:42px}.admin .help-shortcut{display:none}
+.help-box{background:#f7f9fc}.help-hero{background:linear-gradient(135deg,#101827,#1b2a41);color:#fff;border-radius:22px;padding:16px;position:relative;overflow:hidden}.help-hero:after{content:"";position:absolute;right:-48px;top:-48px;width:138px;height:138px;border-radius:50%;background:rgba(220,38,53,.95)}.help-hero h3{font-size:23px;color:#fff;position:relative;z-index:1}.help-hero p{color:#cbd5e1;margin:7px 0 0;position:relative;z-index:1}.help-hero .help-badge{position:relative;z-index:1;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:7px 10px;margin-bottom:10px;font-size:12px;font-weight:1000;color:#fff}.help-layout{display:grid;grid-template-columns:260px 1fr;gap:12px;margin-top:12px}.help-panel,.help-main{background:#fff;border:1px solid var(--line);border-radius:20px;padding:12px;box-shadow:0 8px 22px rgba(15,23,42,.05)}.help-search{position:relative}.help-search input{width:100%;border:2px solid #dbe3ee;border-radius:16px;padding:14px 44px 14px 14px;font-size:16px;font-weight:800;outline:none;background:#fff}.help-search input:focus{border-color:#2563eb;box-shadow:0 0 0 4px rgba(37,99,235,.1)}.help-search span{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:18px}.help-section-label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#64748b;font-weight:1000;margin:13px 2px 8px}.help-quick{display:grid;gap:8px}.help-quick button{border:1px solid var(--line);background:#fff;border-radius:16px;padding:12px;text-align:left;font-weight:1000;color:#0f172a;cursor:pointer;min-height:54px;display:flex;gap:10px;align-items:center}.help-quick button strong{display:block;font-size:13px}.help-quick button small{display:block;font-size:11px;color:#64748b;font-weight:900;margin-top:2px;line-height:1.25}.help-quick .ico{width:34px;height:34px;border-radius:13px;display:grid;place-items:center;background:#f1f5f9;flex:0 0 auto}.help-quick button.danger .ico{background:#fff1f3}.help-quick button.blue .ico{background:#eff6ff}.help-quick button.green .ico{background:#eefaf6}.help-cats{display:flex;gap:7px;overflow:auto;scrollbar-width:none;padding:1px 0 10px}.help-cats::-webkit-scrollbar{display:none}.help-cat{border:1px solid var(--line);background:#fff;color:#334155;border-radius:999px;padding:10px 12px;font-size:12px;font-weight:1000;white-space:nowrap;cursor:pointer}.help-cat.on{background:#101827;color:#fff;border-color:#101827}.help-list{display:grid;gap:9px}.help-card{border:1px solid var(--line);background:#fff;border-radius:18px;overflow:hidden}.help-card[open]{border-color:#bfdbfe;box-shadow:0 8px 22px rgba(37,99,235,.08)}.help-card summary{list-style:none;cursor:pointer;padding:13px;display:flex;gap:10px;align-items:center}.help-card summary::-webkit-details-marker{display:none}.help-card .mark{width:36px;height:36px;border-radius:14px;background:#f1f5f9;display:grid;place-items:center;font-size:18px;flex:0 0 auto}.help-card .sum{min-width:0;flex:1}.help-card .sum b{display:block;font-size:15px;font-weight:1000;line-height:1.15}.help-card .sum small{display:block;color:#64748b;font-size:12px;font-weight:900;margin-top:3px;line-height:1.25}.help-card .chev{color:#64748b;font-weight:1000}.help-card[open] .chev{transform:rotate(180deg)}.help-body{border-top:1px solid var(--line);padding:12px 13px 13px;color:#334155;font-weight:800;line-height:1.45}.help-body p{margin:0 0 10px;color:#334155;font-weight:800}.help-body ul,.help-body ol{margin:8px 0 10px;padding-left:20px}.help-body li{margin:6px 0}.help-note{background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:10px;font-size:13px;color:#475569;font-weight:900}.help-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.help-link{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;border-radius:12px;padding:9px 11px;border:1px solid var(--line);background:#fff;color:#0f172a;text-decoration:none;font-weight:1000;font-size:13px}.help-link.green{background:#ecfdf5;border-color:#a7f3d0;color:#047857}.help-link.dark{background:#101827;border-color:#101827;color:#fff}.help-link.red{background:#fff1f3;border-color:#fecdd3;color:#b91c1c}.status-visual{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin:8px 0 12px}.status-visual img{display:block;width:100%;height:auto;background:#fff}.status-mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin:10px 0}.status-mini{border:1px solid var(--line);border-radius:13px;padding:9px;background:#f8fafc;display:flex;align-items:center;gap:8px;font-size:12px;font-weight:1000}.status-dot{width:15px;height:15px;border-radius:50%;flex:0 0 auto}.help-empty{background:#fff;border:1px dashed #cbd5e1;border-radius:16px;padding:14px;color:#64748b;font-weight:900;line-height:1.45}.help-support-card{margin-top:10px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:18px;padding:13px}.help-support-card b{display:block;font-size:15px}.help-support-card span{display:block;color:#475569;font-size:12px;font-weight:900;margin-top:3px;line-height:1.35}.help-support-card .btn{margin-top:10px;width:100%}.help-route{font-size:11px;color:#64748b;font-weight:1000;text-transform:uppercase;letter-spacing:.05em;margin:2px 0 8px}.help-mode{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.help-mode div{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:9px;position:relative;z-index:1}.help-mode b{display:block;font-size:16px}.help-mode span{display:block;font-size:10px;color:#cbd5e1;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
+@media(max-width:900px){.help-layout{grid-template-columns:1fr}.help-panel{order:1}.help-main{order:2}.help-quick{grid-template-columns:repeat(2,1fr)}.help-quick button{min-height:62px}.help-mode{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:760px){.topbtn.help-top{padding-left:10px;padding-right:10px}.help-shortcut{border-radius:16px;padding:10px;margin-bottom:10px}.help-shortcut span{font-size:11px}.help-shortcut button{padding:9px 10px;font-size:12px;min-height:38px}.help-box{padding-left:12px!important;padding-right:12px!important}.help-hero{border-radius:19px;padding:14px}.help-hero h3{font-size:21px}.help-hero p{font-size:13px}.help-layout{gap:10px}.help-panel,.help-main{border-radius:18px;padding:10px}.help-quick{grid-template-columns:1fr 1fr;gap:7px}.help-quick button{padding:10px;min-height:66px;border-radius:15px}.help-quick .ico{width:32px;height:32px}.help-quick button strong{font-size:12px}.help-quick button small{font-size:10px}.help-card summary{padding:12px 10px}.help-card .mark{width:34px;height:34px}.help-card .sum b{font-size:14px}.help-card .sum small{font-size:11px}.help-body{font-size:13px;padding:11px}.status-mini-grid{grid-template-columns:1fr}.help-mode{grid-template-columns:1fr}.help-mode div{padding:8px}.help-search input{font-size:16px;min-height:48px}.help-cats{margin-left:-2px;margin-right:-2px}.help-cat{padding:9px 11px;font-size:11px}}
+@media(max-width:390px){.help-quick{grid-template-columns:1fr}.help-card summary{gap:8px}.help-shortcut{align-items:flex-start}.help-shortcut button{align-self:center}.top-actions{gap:5px}.topbtn{padding:8px 8px!important}}
+
+</style>
+</head>
+<body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="appbar"><div class="appbar-inner"><div class="logo" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 32 32" fill="none"><circle cx="8" cy="23" r="4" stroke="white" stroke-width="2.4"/><circle cx="24" cy="23" r="4" stroke="white" stroke-width="2.4"/><path d="M12 23h8M16 23v-8l-4-5h7l4 5h-6" stroke="white" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 15h7" stroke="white" stroke-width="2.3" stroke-linecap="round"/></svg></div><div class="brand"><h1>Osasco Express — Reservas</h1><p>Escolha seus horários da semana</p></div><div class="top-actions"><button class="topbtn my-top" onclick="openMyReservations()">📋 <span class="txt">Minhas</span></button><button class="topbtn help-top" onclick="openHelpCenter()">📘 <span class="txt">Ajuda</span></button><button class="topbtn" id="adminBtn" onclick="toggleAdmin()">🔒 <span class="txt">Gestão</span></button></div></div></header>
+<nav class="toolbar"><div class="toolbar-inner" id="toolbar"></div></nav>
+<main id="conteudo">
+  <section class="hero"><div class="hero-copy"><h2>Escolha seus horários da semana</h2><p>Reserve seus pontos por dia e acompanhe tudo em “Minhas reservas”.</p></div><div class="metrics" id="metrics"></div></section>
+  <section class="my-shortcut" aria-label="Atalho para minhas reservas"><div><b>Já reservou?</b><span>Veja seus pontos, dias e horários para não se perder.</span></div><button type="button" onclick="openMyReservations()">Minhas reservas</button></section>
+  <section class="help-shortcut" aria-label="Atalho para ajuda do parceiro"><div><b>Dúvida rápida?</b><span>Baixar app, reservar, código, pagamento e suporte.</span></div><button type="button" onclick="openHelpCenter()">Abrir ajuda</button></section>
+  <div class="section-title"><h3>Clientes e horários</h3><span id="viewLabel">Semana completa</span></div>
+  <section class="cards" id="cards"></section>
+</main>
+
+<div class="modal" id="reserveModal"><div class="box"><div class="handle"></div><h3 id="reserveTitle">Escolher dias</h3><p id="reserveDesc"></p><div class="field"><label>Seu nome</label><input id="partnerName" placeholder="Ex: João Silva" autocomplete="name" oninput="refreshReserveDays()"></div><div class="modal-actions" style="margin-top:0"><button class="btn light" onclick="selectAllPossible()">Marcar disponíveis</button></div><div class="select-days" id="reserveDays"></div><p class="hint" style="font-size:13px;color:#64748b;font-weight:800;line-height:1.4">Confirme só os horários que você consegue cumprir. O time conta com você.</p><div class="modal-actions"><button class="btn light" onclick="closeModal('reserveModal')">Voltar</button><button class="btn green" onclick="confirmReservation()">Confirmar horários</button></div></div></div>
+<div class="modal" id="myModal"><div class="box"><div class="handle"></div><h3>Minhas reservas</h3><p>Veja seus pontos confirmados por dia. Se não conseguir cumprir algum horário, toque em Reabrir e avise o suporte.</p><div class="field"><label>Seu nome</label><input id="myName" placeholder="Ex: João Silva" oninput="findMine()"></div><div class="booking-list" id="myResults"></div><div class="modal-actions"><button class="btn light" onclick="closeModal('myModal')">Fechar</button></div></div></div>
+<div class="modal" id="reopenModal"><div class="box"><div class="handle"></div><h3>O time precisa saber</h3><p id="reopenText"></p><div id="reopenSummary" class="reopen-summary"></div><p class="danger-note">Ao avisar o suporte, a operação ganha tempo para tentar uma substituição e não deixar o cliente descoberto.</p><div class="modal-actions"><button class="btn light" onclick="closeModal('reopenModal')">Manter reserva</button><button class="btn danger" onclick="confirmReopen()">Reabrir vaga</button></div></div></div>
+<div class="modal" id="supportModal"><div class="box"><div class="handle"></div><h3>O suporte precisa saber</h3><p id="supportNoticeText">A reserva foi reaberta na agenda. Agora envie o aviso para o suporte tentar uma substituição a tempo. Atendimento para vagas, agenda e reaberturas: 10h às 20h, todos os dias. Mensagens fora do horário ficam registradas para o próximo atendimento.</p><div id="supportMessageBox" class="team-message"></div><div class="modal-actions"><button class="btn light" onclick="copySupportMessage()">Copiar aviso</button><button class="btn green" onclick="sendSupportWhatsapp()">Enviar pelo WhatsApp</button></div><div class="modal-actions"><button class="btn light" onclick="closeModal('supportModal')">Fechar</button></div></div></div>
+<div class="modal" id="adminModal"><div class="box"><div class="handle"></div><h3>Acesso da gestão</h3><p>Entre com a conta Google liberada para abrir a área de gestão.</p><div class="modal-actions"><button class="btn light" onclick="closeModal('adminModal')">Voltar</button><button class="btn primary" onclick="loginAdmin()">Entrar com Google</button></div></div></div>
+<div class="modal" id="editModal"><div class="box wide"><div class="handle"></div><h3>Editar vagas por dia</h3><p>Edite só a quantidade por dia. O entregador continua vendo 0/1, 0/2, 0/4 etc.</p><div class="edit-table" id="editTable"></div><div class="modal-actions"><button class="btn light" onclick="closeModal('editModal')">Cancelar</button><button class="btn primary" onclick="saveCounts()">Salvar vagas</button></div></div></div>
+
+<div class="modal" id="adminTeamModal"><div class="box wide"><div class="handle"></div><h3 id="adminTeamTitle">Equipe</h3><p id="adminTeamDesc"></p><div id="adminTeamList" class="team-grid"></div><div class="modal-actions"><button class="btn light" onclick="closeModal('adminTeamModal')">Fechar</button><button class="btn primary" id="adminTeamMessageBtn" onclick="openTeamMessageFromModal()">Mensagem time fechado</button></div></div></div>
+<div class="modal" id="adminMessageModal"><div class="box wide"><div class="handle"></div><h3>Mensagem de time fechado</h3><p>Copie ou printe para enviar no grupo do cliente antes do turno começar.</p><div id="adminMessageBox" class="team-message"></div><div class="modal-actions"><button class="btn light" onclick="closeModal('adminMessageModal')">Fechar</button><button class="btn primary" onclick="copyAdminTeamMessage()">Copiar mensagem</button><button class="btn green" onclick="window.print()">Printar</button></div></div></div>
+
+
+<div class="modal" id="adminPrintModal"><div class="box wide"><div class="handle"></div><h3>Imprimir agenda</h3><p class="print-modal-intro">Gere uma versão limpa para conferência operacional. A impressão não altera reservas.</p><div class="admin-print-actions"><button class="mini dark" onclick="buildAdminPrint('today')">Hoje</button><button class="mini" onclick="buildAdminPrint('selected')">Dia selecionado</button><button class="mini" onclick="buildAdminPrint('week')">Semana</button><button class="mini amber" onclick="buildAdminPrint('gaps')">Vagas abertas</button></div><div id="adminPrintArea" class="print-sheet"></div><div class="modal-actions"><button class="btn light" onclick="closeModal('adminPrintModal')">Fechar</button><button class="btn primary" onclick="copyAdminPrintText()">Copiar texto</button><button class="btn green" onclick="printAdminScale()">Imprimir</button></div></div></div>
+
+<div class="modal" id="helpModal"><div class="box wide help-box"><div class="handle"></div><section class="help-hero"><span class="help-badge">📘 Central do Parceiro</span><h3>Resolva rápido. Rode certo.</h3><p>App, ponto de coleta, reserva, pedido, pagamento e suporte em respostas rápidas para consultar na rua.</p><div class="help-mode"><div><b>1</b><span>toque</span></div><div><b>2</b><span>entenda</span></div><div><b>3</b><span>resolva</span></div></div></section><div class="help-layout"><aside class="help-panel"><div class="help-search"><input id="helpSearch" type="search" placeholder="Buscar: online, GPS, código, pagamento..." oninput="renderHelpCenter()"><span>🔎</span></div><div class="help-section-label">Atalhos rápidos</div><div class="help-quick" id="helpQuick"></div><div class="help-support-card"><b>Não achou?</b><span>Suporte para vagas, agenda e reaberturas: 10h às 20h, todos os dias.</span><button class="btn green" onclick="openHelpSupport()">Falar com suporte</button></div></aside><main class="help-main"><div class="help-route" id="helpRoute">Todos os assuntos</div><div class="help-cats" id="helpCats"></div><div class="help-list" id="helpList"></div></main></div><div class="modal-actions"><button class="btn light" onclick="closeModal('helpModal')">Fechar</button><button class="btn green" onclick="openHelpSupport()">Chamar suporte</button></div></div></div>
+
+<div class="toast" id="toast"></div>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+<script>
+'use strict';
+const APP_VERSION='2026-06-08-v48-governanca-tecnica-final';
+const DATA_SCHEMA_VERSION='modelo-0x-cliente-turno-dias-v3-diarias';
+// v39: copy final sem ruído técnico na interface.
+const STORAGE_KEY='oe_agenda_reservas_state';
+const LEGACY_STORAGE_KEYS=['oe_agenda_reservas_grupo_v7_0x','oe_agenda_reservas_v7','oe_agenda_reservas'];
+const SUPPORT_PHONE='5511924782555';
+const ADMIN_SESSION_TTL_MS=5*60*1000;
+const ADMIN_SESSION_KEY='oe_admin_session_v1';
+const ADMIN_PENDING_REDIRECT_KEY='oe_admin_pending_redirect_v1';
+const FIREBASE_CONFIG={
+  apiKey:'AIzaSyCjE_pOqepUOvDGNgJzQLaDK-gCHZYCv7w',
+  authDomain:'confirmadosdasemana.firebaseapp.com',
+  projectId:'confirmadosdasemana',
+  storageBucket:'confirmadosdasemana.firebasestorage.app',
+  messagingSenderId:'893051963535',
+  appId:'1:893051963535:web:c7e8a0ee5ca55fd35408fa',
+  measurementId:'G-JQF20WC3DB'
+};
+let fbApp=null,auth=null,db=null,currentUser=null,currentAdminProfile=null,weekUnsub=null,configUnsub=null,notifUnsub=null,firebaseOnline=false,adminSessionExpiresAt=0,adminIdleTimer=null;
+let authReadyResolved=false,authReadyPromise=null,resolveAuthReady=null;
+let currentWeekId='';
+const DAYS=[['seg','Segunda'],['ter','Terça'],['qua','Quarta'],['qui','Quinta'],['sex','Sexta'],['sab','Sábado'],['dom','Domingo']];
+const DAY_SHORT={seg:'Seg',ter:'Ter',qua:'Qua',qui:'Qui',sex:'Sex',sab:'Sáb',dom:'Dom'};
+const DEFAULT_SHIFTS=[
+ {id:'camila-manha',client:'Pastel da Camila',time:'10h–16h',start:'10:00',end:'16:00',color:'red',slots:{seg:1,ter:1,qua:1,qui:1,sex:2,sab:2,dom:2}},
+ {id:'camila-tarde',client:'Pastel da Camila',time:'16h–22h',start:'16:00',end:'22:00',color:'red',slots:{seg:1,ter:1,qua:1,qui:1,sex:2,sab:2,dom:2}},
+ {id:'bevenutti-noite',client:'Bevenutti',time:'18h–00h30',start:'18:00',end:'00:30',color:'green',slots:{seg:4,ter:4,qua:5,qui:6,sex:15,sab:13,dom:11}},
+ {id:'drica-noite',client:'Pastel da Drica',time:'18h–00h',start:'18:00',end:'00:00',color:'red',slots:{seg:3,ter:2,qua:2,qui:3,sex:4,sab:4,dom:4}},
+ {id:'meridio-noite',client:'Meridio Pizza',time:'18h–00h',start:'18:00',end:'00:00',color:'blue',slots:{seg:0,ter:3,qua:3,qui:3,sex:5,sab:5,dom:4}},
+ {id:'barto-almoco',client:'Barto Bar',time:'10h45–16h45',start:'10:45',end:'16:45',color:'amber',slots:{seg:1,ter:1,qua:1,qui:1,sex:1,sab:1,dom:1}},
+ {id:'fratelli-17',client:'Fratelli Gourmet',time:'17h–23h',start:'17:00',end:'23:00',color:'blue',slots:{seg:1,ter:1,qua:1,qui:1,sex:1,sab:1,dom:1}},
+ {id:'fratelli-18',client:'Fratelli Gourmet',time:'18h–00h',start:'18:00',end:'00:00',color:'blue',slots:{seg:2,ter:2,qua:2,qui:2,sex:3,sab:3,dom:3}},
+ {id:'center-meat',client:'Center Meat',time:'Falta definir',start:'18:00',end:'00:00',color:'amber',slots:{seg:0,ter:0,qua:0,qui:0,sex:0,sab:0,dom:0}}
+];
+
+const CLIENT_LOGOS={"Barto Bar":"logos/barto-rock-comedy-logo-prova-social-site.png","Center Meat":"logos/centermeat-mercado-das-carnes-logo-prova-social-site.png","Fratelli Gourmet":"logos/fratelli-espaco-gourmet-logo-prova-social-site.png","Meridio Pizza":"logos/meridio-pizza-logo-prova-social-site.png","Pastel da Drica":"logos/pastel-da-drica-logo.jpeg","Bevenutti":"logos/pizzaria-bevenutti-logo-prova-social-site.png","Pastel da Camila":"logos/pastel-da-camilla-logo-prova-social-site.png"};
+const CLIENT_ICONS={"Pastel da Camila": "🥟", "Pastel da Drica": "🥟", "Bevenutti": "🍕", "Meridio Pizza": "🍕", "Fratelli Gourmet": "🍽️", "Barto Bar": "🍺", "Center Meat": "🥩"};
+let state={shifts:[],bookings:{},notifications:[]}, filter={day:'all',client:'all'}, admin=false, adminView='hoje', adminDay='', currentAdminRow=null, currentAdminMessage='', currentSupportMessage='', currentShift=null, selectedDays=new Set(), reopenKey=null, reopenKeys=[], selectedReopenKeys=new Set();
+
+
+const HELP_STATUS_IMG='assets/status-pedidos-osasco-express.png';
+let helpFilter='todos';
+const HELP_CATEGORIES=[
+  ['todos','Todos'],['inicio','Começando'],['checklist','Antes de rodar'],['ponto','Ponto fixo'],['reserva','Reservas'],['turno','Pedido'],['problema','Problemas'],['pagamento','Pagamento'],['regras','Regras'],['links','Links']
+];
+const HELP_ARTICLES=[
+  {cat:'inicio',icon:'📲',title:'Baixar app no Android',short:'Baixe o app oficial',keys:'baixar app android play store instalar',body:`<p>Abra a Play Store e procure por <b>Osasco Express Entregadores</b>.</p><ol><li>Baixe o app.</li><li>Abra o app.</li><li>Entre com os dados orientados pelo suporte.</li><li>Se der erro, mande print.</li></ol>`,actions:[['Baixar na Play Store','https://play.google.com/store/apps/details?id=com.osascoexpress&hl=pt','dark']]},
+  {cat:'inicio',icon:'🍎',title:'Usa iPhone?',short:'Confira o domínio antes de entrar',keys:'iphone ios dominio foody delivery osascoexpresseentregadores',body:`<p>No iPhone, use o app indicado pelo suporte.</p><div class="help-note">Antes de entrar, confira o domínio no rodapé: <b>osascoexpresseentregadores</b>.</div><p>Se não conseguir acessar, mande print da tela para o suporte.</p>`},
+  {cat:'inicio',icon:'🔓',title:'Não consigo entrar',short:'Mande print e dados certos',keys:'cadastro liberacao vinculo telefone conta entrar erro senha',body:`<p>Para o suporte ajudar rápido, mande tudo na mesma mensagem:</p><ul><li>nome completo;</li><li>telefone cadastrado;</li><li>print do erro;</li><li>se usa Android ou iPhone.</li></ul><div class="help-note">Às vezes o cadastro já existe, mas ainda precisa ser conferido e liberado pela operação.</div>`},
+  {cat:'inicio',icon:'🧾',title:'Dados atualizados',short:'Nome, telefone, e-mail e PIX',keys:'dados pessoais telefone email pix cadastro atualização',body:`<p>Mantenha <b>nome, telefone, e-mail e chave PIX</b> atualizados.</p><p>Dado errado pode atrapalhar liberação de acesso, contato do suporte, conferência de entregas e fechamento de valores.</p><div class="help-note">Mudou algum dado? Avise o suporte.</div>`},
+
+  {cat:'checklist',icon:'✅',title:'Antes de rodar, confira',short:'Evite perder pedido por erro simples',keys:'checklist antes rodar app atualizado cadastro empresa correta disponivel gps notificacao som internet bateria maps segundo plano',body:`<p>Antes de iniciar o horário reservado, confira:</p><ul><li>app atualizado;</li><li>cadastro liberado;</li><li>empresa correta selecionada;</li><li>status <b>Disponível</b>;</li><li>localização permitida e exata ativa;</li><li>notificações ativas;</li><li>som ou vibração funcionando;</li><li>internet funcionando;</li><li>bateria sem restrição;</li><li>Google Maps funcionando;</li><li>app aberto em segundo plano.</li></ul>`},
+  {cat:'checklist',icon:'🟢',title:'Não apareço online',short:'Veja o que conferir primeiro',keys:'nao apareco online offline cadastro aprovado telefone empresa status disponivel localização exata bateria internet',body:`<p>Confira nesta ordem:</p><ol><li>app atualizado;</li><li>cadastro aprovado;</li><li>telefone igual ao cadastro;</li><li>empresa correta selecionada;</li><li>status <b>Disponível</b>;</li><li>localização permitida e exata ativa;</li><li>notificações ativas;</li><li>app em segundo plano liberado;</li><li>bateria sem bloqueio;</li><li>internet ativa.</li></ol><div class="help-note">Se continuar com erro, mande print ao suporte com nome, telefone cadastrado e mensagem que apareceu.</div>`},
+  {cat:'checklist',icon:'🏠',title:'Android: não feche o app',short:'Use o botão Home',keys:'android botão home segundo plano fechar app forçar parada whatsapp mapa telefone',body:`<p>Durante o horário reservado, <b>não feche o aplicativo</b>.</p><p>Se precisar abrir WhatsApp, mapa ou telefone, use o botão <b>Home</b> para deixar o app funcionando em segundo plano.</p><div class="help-note">Não arraste o app para fechar e não use forçar parada. Se fechar, você pode deixar de receber pedido, rota ou atualização.</div>`},
+  {cat:'checklist',icon:'🔋',title:'Bateria bloqueando o app',short:'Deixe como não restrito',keys:'android bateria otimização não restrito não otimizado economia extrema pedido notificacao rota',body:`<p>Alguns celulares bloqueiam aplicativos para economizar bateria. Isso pode fazer você perder pedido, notificação ou rota.</p><ol><li>Abra Configurações.</li><li>Entre em Aplicativos.</li><li>Procure Osasco Express Entregadores.</li><li>Abra Bateria.</li><li>Deixe como <b>Não restrito</b> ou <b>Não otimizado</b>.</li></ol><div class="help-note">Evite modo economia extrema durante a operação.</div>`},
+  {cat:'checklist',icon:'🧭',title:'Rota abriu no app errado',short:'Escolha Google Maps como padrão',keys:'android gps padrão rota app errado google maps definir apagar padrões',body:`<p>O ideal é usar o <b>Google Maps</b> como app principal de navegação.</p><ol><li>Vá em Configurações.</li><li>Aplicativos.</li><li>Abra o app de GPS que está abrindo sozinho.</li><li>Toque em Definir como padrão.</li><li>Apague os padrões.</li><li>Clique no endereço de novo e escolha Google Maps.</li><li>Quando aparecer, selecione <b>Sempre</b>.</li></ol>`},
+  {cat:'checklist',icon:'🔔',title:'Notificação e som',short:'Pedido precisa chamar sua atenção',keys:'notificação som vibração silencioso pedido toque tela app',body:`<p>Sem notificação, você pode não perceber o pedido.</p><ul><li>ative as notificações do app;</li><li>confira se o celular não está no silencioso;</li><li>mantenha som ou vibração funcionando;</li><li>acompanhe a tela do app durante o horário reservado.</li></ul>`},
+
+  {cat:'ponto',icon:'📍',title:'Como funciona o ponto fixo',short:'Você fica disponível no ponto',keys:'ponto fixo região coleta disponibilidade turno 6 horas diaria entrega',body:`<p>A Osasco Express trabalha com pontos fixos e regiões de operação.</p><p>Você reserva disponibilidade em <b>turnos de 6 horas</b>, conforme as vagas disponíveis.</p><div class="help-note">Cada ponto pode ter valores, horários e condições próprias.</div>`},
+  {cat:'ponto',icon:'🔄',title:'Ponto sem pedidos',short:'Pode cair coleta de outro ponto',keys:'ponto sem pedidos outro estabelecimento região suporte sistema entrega app aceitar retorno origem',body:`<p>Se o ponto de origem ficar sem pedidos, o suporte ou o sistema pode direcionar você para coletar em outro estabelecimento da região.</p><p>O processo é o mesmo: recebe no app, aceita, vai ao ponto informado, confere, coleta, entrega e continua online.</p><div class="help-note">Se não cair nova entrega, retorne ao ponto de origem ou ao local orientado pela operação.</div>`},
+  {cat:'ponto',icon:'🧭',title:'Coleta em outro ponto',short:'Passo a passo correto',keys:'coleta outro ponto passo suporte sistema aceita loja confere finaliza retorna origem',body:`<ol><li>Suporte ou sistema lança a entrega.</li><li>Você recebe a solicitação.</li><li>Aceita no app.</li><li>Vai até o ponto informado.</li><li>Informa o pedido que vai retirar.</li><li>Confere com a loja.</li><li>Marca a coleta corretamente.</li><li>Realiza a entrega.</li><li>Finaliza no app.</li><li>Continua online.</li><li>Se não cair nova entrega, retorna ao ponto de origem.</li></ol>`},
+
+  {cat:'reserva',icon:'📅',title:'Reservar horário',short:'Escolha o ponto e confirme',keys:'reservar horario escolher vaga agenda disponibilidade ponto',body:`<ol><li>Escolha o cliente.</li><li>Veja o horário disponível.</li><li>Marque os dias que você consegue cumprir.</li><li>Confirme sua reserva.</li></ol><div class="help-note">Reserve só se você consegue atender. A vaga fica no seu nome e sai da lista dos outros parceiros.</div>`},
+  {cat:'reserva',icon:'📋',title:'Ver minhas reservas',short:'Use o botão Minhas reservas',keys:'minhas reservas ver consultar semana agenda conta google',body:`<p>Toque em <b>Minhas reservas</b> no topo da agenda.</p><p>Ali aparecem seus clientes, dias e horários confirmados.</p><div class="help-note">Entre com a mesma conta Google que usou para reservar.</div>`},
+  {cat:'reserva',icon:'🔁',title:'Reabrir vaga',short:'Reabra e avise o suporte',keys:'reabrir vaga cancelar reserva nao vou conseguir suporte whatsapp',body:`<ol><li>Abra <b>Minhas reservas</b>.</li><li>Escolha a reserva.</li><li>Toque em <b>Reabrir</b>.</li><li>Envie o aviso pelo WhatsApp.</li></ol><div class="help-note">A vaga volta para a agenda e o suporte tenta cobrir a tempo.</div>`},
+  {cat:'reserva',icon:'⏰',title:'Dois horários no mesmo dia',short:'Pode se não houver conflito',keys:'dois horarios mesmo dia conflito turno',body:`<p>Você pode reservar mais de um ponto no mesmo dia se os horários não baterem.</p><p>Se o horário tiver conflito, o app bloqueia para evitar erro na operação.</p>`},
+
+  {cat:'turno',icon:'👥',title:'Grupo da loja',short:'Canal principal da entrega',keys:'grupo loja whatsapp cliente codigo aviso rota atraso retorno divergência cliente não localizado',body:`<p>Na operação da Osasco Express, o canal principal durante a entrega é o <b>grupo de WhatsApp da loja</b>.</p><p>Use o grupo para avisos de coleta, rota, código, atraso, divergência, cliente não localizado, retorno e qualquer situação que precise ficar registrada.</p><div class="help-note">O chat interno do aplicativo não é o canal principal. Priorize o grupo da loja e, se necessário, acione o suporte.</div>`},
+  {cat:'turno',icon:'⚡',title:'Pedido caiu na tela',short:'Confira e aceite rápido',keys:'despacho automatico aceitar pedido rapido rota tela',body:`<p>Quando o pedido cair na tela, confira e aceite rápido.</p><p>Se demorar, o pedido pode ir para outro parceiro e bagunçar a rota.</p><div class="help-note">Se tiver problema real para aceitar, avise no grupo da loja ou acione o suporte.</div>`},
+  {cat:'turno',icon:'🎨',title:'Cores dos pedidos',short:'Entenda o status na tela',keys:'status cores aberto pronto despachado aceito caminho entregue',body:`<p>As cores mostram em que etapa o pedido está.</p><div class="status-visual"><img src="${HELP_STATUS_IMG}" alt="Legenda de status dos pedidos Osasco Express"></div><div class="status-mini-grid"><div class="status-mini"><span class="status-dot" style="background:#ef4444"></span>Aberto: preparando</div><div class="status-mini"><span class="status-dot" style="background:#8b5cf6"></span>Pronto: pode sair</div><div class="status-mini"><span class="status-dot" style="background:#f59e0b"></span>Despachado: enviado</div><div class="status-mini"><span class="status-dot" style="background:#facc15"></span>Aceito: você aceitou</div><div class="status-mini"><span class="status-dot" style="background:#2dd4bf"></span>A caminho: coletado</div><div class="status-mini"><span class="status-dot" style="background:#22c55e"></span>Entregue: finalizado</div></div><div class="help-note">Se não entender a cor ou o pedido, pergunte antes de fazer errado.</div>`},
+  {cat:'turno',icon:'🛍️',title:'Marcar coletado',short:'Só depois de pegar o pedido',keys:'coletado marcar pedido retirar loja',body:`<p>Marque <b>coletado</b> apenas quando o pedido estiver com você.</p><p>Não marque antes de retirar. Isso confunde loja, cliente e operação.</p>`},
+  {cat:'turno',icon:'🔢',title:'Código de entrega',short:'Código primeiro. Finalizar depois.',keys:'codigo entrega confirmar finalizacao plataforma grupo loja',body:`<p>Cada plataforma pode ter seu próprio código de confirmação.</p><ol><li>Confira a orientação da loja ou do grupo.</li><li>Digite o código correto quando for obrigatório.</li><li>Só finalize quando a plataforma permitir.</li></ol><div class="help-note">Quando houver código obrigatório, não finalize sem conferir o código correto.</div>`},
+  {cat:'turno',icon:'🏁',title:'Fim do horário',short:'Fique offline no app',keys:'fim horario offline aplicativo terminar turno',body:`<p>Ao terminar o horário reservado, fique offline no aplicativo.</p><p>Isso ajuda o suporte a enxergar quem ainda está disponível e evita despacho fora do período.</p>`},
+
+  {cat:'problema',icon:'🚪',title:'Cliente não apareceu',short:'Tente contato, registre e aguarde',keys:'cliente nao apareceu ausente endereço campainha foto comanda buzinar suporte loja',body:`<ol><li>Ligue pelo app quando disponível.</li><li>Aperte campainha ou interfone.</li><li>Buzine com bom senso, se for adequado ao local.</li><li>Mande foto do pedido com a comanda na frente do endereço no grupo da loja.</li><li>Aguarde retorno da loja.</li><li>Se a loja não responder, ligue para a loja.</li><li>Se ainda não houver retorno, acione o suporte.</li><li>Aguarde autorização para seguir ou retornar com o pedido.</li></ol><div class="help-note">Não abandone o pedido sem orientação.</div>`},
+  {cat:'problema',icon:'🧾',title:'Pedido errado ou faltando item',short:'Avise antes de sair',keys:'pedido errado faltando item bebida comanda incompleto',body:`<p>Antes de sair, confira pedido, comanda, sacola, bebida, endereço e observações.</p><p>Se perceber erro, avise no grupo da loja e aguarde correção ou orientação.</p>`},
+  {cat:'problema',icon:'🗺️',title:'Endereço diferente',short:'Não mude sozinho',keys:'endereco divergente mapa rota destino',body:`<p>Confira o endereço no app e fale com a loja ou suporte.</p><div class="help-note">Não mude o destino por conta própria sem deixar registrado.</div>`},
+  {cat:'problema',icon:'🧑‍💼',title:'Quando chamar suporte',short:'Quando precisa de decisão',keys:'suporte chamar loja nao responde erro app finalizar retorno cliente travado outro ponto decisão',body:`<p>Acione o suporte quando:</p><ul><li>a loja não responder;</li><li>o app apresentar erro;</li><li>você não conseguir finalizar;</li><li>houver dúvida sobre retorno;</li><li>tiver problema com cliente;</li><li>o pedido estiver travado;</li><li>for direcionado para outro ponto;</li><li>precisar de decisão operacional.</li></ul>`},
+  {cat:'problema',icon:'📵',title:'App travou ou não toca',short:'Confira o básico primeiro',keys:'app travou nao toca notificacao gps bateria internet online',body:`<ul><li>veja se tem internet;</li><li>confira status Disponível;</li><li>ative notificações;</li><li>libere localização exata;</li><li>evite economia extrema de bateria;</li><li>não feche o app durante a operação;</li><li>se continuar, mande print ao suporte.</li></ul>`},
+  {cat:'problema',icon:'🛡️',title:'Local inseguro',short:'Sua segurança vem primeiro',keys:'seguranca risco local perigoso assalto inseguro',body:`<p>Se o local parecer inseguro, pare em um lugar seguro e avise a loja ou o suporte.</p><div class="help-note">Explique o que aconteceu e aguarde orientação.</div>`},
+
+  {cat:'pagamento',icon:'💰',title:'Quando recebo?',short:'Pagamento às terças-feiras',keys:'pagamento recebe terça financeiro repasse',body:`<p>Os valores apurados na operação são pagos semanalmente, somente às <b>terças-feiras</b>.</p><p>Atendimento financeiro: terça, das <b>8h às 18h</b>, para conferir valores, entregas, diárias operacionais, repasses e dúvidas.</p><div class="help-note">Fora desse horário, o suporte pode receber a mensagem, mas a conferência financeira será feita no próximo atendimento do financeiro.</div>`},
+  {cat:'pagamento',icon:'🚫',title:'Sem vale',short:'Não fazemos adiantamento',keys:'vale adiantamento antecipacao gasolina combustivel manutenção alimentação emergência',body:`<p>Sem vale: a Osasco Express não realiza vale, adiantamento ou antecipação de pagamento.</p><p>O parceiro deve se programar pelo calendário oficial de fechamento e pagamento.</p><div class="help-note">Essa regra vale para combustível, manutenção, alimentação, emergência pessoal ou qualquer pedido fora do fechamento regular.</div>`},
+  {cat:'pagamento',icon:'📊',title:'Conferir pagamento',short:'Mande dados claros',keys:'conferir valores divergencia financeiro entregas relatorio pix',body:`<p>Para conferir valor, mande:</p><ul><li>nome;</li><li>loja;</li><li>período;</li><li>print ou relatório disponível;</li><li>descrição objetiva da dúvida.</li></ul>`},
+
+  {cat:'regras',icon:'🤝',title:'Reserva é compromisso',short:'O time conta com você',keys:'compromisso reserva responsabilidade time conta',body:`<p>Quando você reserva, a vaga sai da lista e fica no seu nome.</p><div class="help-note">Se não conseguir cumprir, reabra a vaga e avise o suporte o quanto antes.</div>`},
+  {cat:'regras',icon:'🏍️',title:'Meios próprios',short:'Moto, combustível, celular e bag',keys:'moto combustivel celular internet bag bau equipamento manutenção documentação parceiro autônomo',body:`<p>O parceiro autônomo roda com seus próprios meios de trabalho.</p><ul><li>moto;</li><li>combustível;</li><li>manutenção preventiva e corretiva;</li><li>documentação;</li><li>celular;</li><li>internet;</li><li>bag, baú ou mochila térmica;</li><li>equipamentos necessários para rodar com segurança.</li></ul>`},
+  {cat:'regras',icon:'🗣️',title:'Como falar no grupo',short:'Calma, respeito e informação',keys:'grupo respeito suporte comunicacao loja cliente',body:`<p>Fale curto e com informação.</p><ul><li>loja;</li><li>número do pedido, se tiver;</li><li>endereço, se for o caso;</li><li>print, se tiver;</li><li>o que aconteceu.</li></ul><div class="help-note">Não discuta. Informe e aguarde orientação.</div>`},
+  {cat:'regras',icon:'🚫',title:'O que não fazer',short:'Evite travar a operação',keys:'nao fazer abandonar pedido finalizar antes sumir discutir transferir vaga',body:`<ul><li>não abandone pedido sem avisar;</li><li>não finalize antes de entregar;</li><li>não finalize sem código quando for obrigatório;</li><li>não saia sem conferir;</li><li>não suma no horário reservado;</li><li>não passe sua vaga para outra pessoa sem validação;</li><li>não discuta com cliente ou loja.</li></ul>`},
+  {cat:'regras',icon:'📝',title:'Ao confirmar a reserva',short:'Você declara que entendeu',keys:'aceite final parceiro autonomo app ponto fixo coleta entrega codigo whatsapp pagamento vale meios proprios',body:`<p>Ao confirmar sua reserva, você declara que leu e entendeu as orientações da Osasco Express.</p><p>Você atua como parceiro autônomo, usando seus próprios meios de trabalho, e entende as regras de app, ponto fixo, coleta, entrega, código, comunicação pelo grupo de WhatsApp da loja, suporte operacional, pagamento às terças-feiras, ausência de vale e responsabilidade pelos seus meios de trabalho.</p>`},
+
+  {cat:'links',icon:'☎️',title:'Falar com suporte',short:'10h às 20h, todos os dias',keys:'suporte whatsapp falar ajuda duvida atendimento horario vagas reabertura agenda escala',body:`<p>Para vagas, agenda e reaberturas, o suporte atende das <b>10h às 20h</b>, de segunda a segunda.</p><div class="help-note">Fora desse horário, a mensagem fica registrada e será respondida no dia seguinte ou dentro do horário de atendimento.</div><p>Quando chamar, mande:</p><ul><li>nome;</li><li>cliente;</li><li>dia e horário;</li><li>o que aconteceu;</li><li>print, se tiver.</li></ul>`,actions:[['Falar com suporte','https://wa.me/5511924782555','green']]},
+  {cat:'links',icon:'📚',title:'Gibi de integração',short:'Boas-vindas e regras visuais',keys:'gibi integracao boas vindas kauan regras',body:`<p>Use o gibi para revisar as orientações principais da operação.</p>`,actions:[['Abrir gibi','https://osascoexpressentregadores.github.io/boasvindas/','dark']]}
+];
+const HELP_QUICK=[
+  ['✅','Antes de rodar','checklist','Antes de rodar, confira','green'],
+  ['🟢','Não apareço online','checklist','Não apareço online','danger'],
+  ['📍','Ponto fixo','ponto','Como funciona o ponto fixo','blue'],
+  ['👥','Grupo da loja','turno','Grupo da loja','green'],
+  ['🚪','Cliente sumiu','problema','Cliente não apareceu','danger'],
+  ['🔢','Código','turno','Código de entrega','blue'],
+  ['🔋','Bateria','checklist','Bateria bloqueando o app','danger'],
+  ['☎️','Suporte','links','Falar com suporte','green']
+];
+function stripTags(html){return String(html||'').replace(/<[^>]*>/g,' ')}
+function openHelpCenter(){helpFilter='todos';openModal('helpModal');setTimeout(()=>{renderHelpCenter()},30)}
+function setHelpFilter(cat){helpFilter=cat;const input=document.getElementById('helpSearch');if(input)input.value='';renderHelpCenter()}
+function openHelpArticle(title){helpFilter='todos';const input=document.getElementById('helpSearch');if(input)input.value=title;renderHelpCenter(title)}
+function helpArticleActions(a){let arr=a.actions||[];return arr.map(([label,url,tone])=>`<a class="help-link ${tone||''}" href="${escAttr(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join('')}
+function renderHelpQuick(){const el=document.getElementById('helpQuick');if(!el)return;el.innerHTML=HELP_QUICK.map(([ico,title,cat,article,tone])=>`<button class="${tone||''}" type="button" onclick="openHelpArticle('${escAttr(article)}')"><span class="ico">${ico}</span><span><strong>${esc(title)}</strong><small>${esc(article)}</small></span></button>`).join('')}
+function renderHelpCenter(forceOpenTitle=''){
+  renderHelpQuick();
+  const q=normName((document.getElementById('helpSearch')||{}).value||forceOpenTitle||'');
+  const cats=document.getElementById('helpCats');
+  if(cats)cats.innerHTML=HELP_CATEGORIES.map(([id,label])=>`<button type="button" class="help-cat ${helpFilter===id?'on':''}" onclick="setHelpFilter('${id}')">${esc(label)}</button>`).join('');
+  const route=document.getElementById('helpRoute');
+  const catLabel=(HELP_CATEGORIES.find(c=>c[0]===helpFilter)||['','Todos os assuntos'])[1];
+  if(route)route.textContent=q?'Resultado da busca':catLabel;
+  let rows=HELP_ARTICLES.map((a,i)=>({...a,i}));
+  if(helpFilter!=='todos')rows=rows.filter(a=>a.cat===helpFilter);
+  if(q){rows=rows.filter(a=>normName([a.title,a.short,a.keys,stripTags(a.body)].join(' ')).includes(q));}
+  const list=document.getElementById('helpList');
+  if(!list)return;
+  if(!rows.length){list.innerHTML='<div class="help-empty">Não achei essa dúvida. Tente uma palavra simples: app, código, reserva, pagamento ou suporte.</div>';return;}
+  list.innerHTML=rows.map(a=>`<details class="help-card" ${forceOpenTitle&&a.title===forceOpenTitle?'open':''}><summary><span class="mark">${a.icon||'📌'}</span><span class="sum"><b>${esc(a.title)}</b><small>${esc(a.short||'Toque para ver a resposta')}</small></span><span class="chev">⌄</span></summary><div class="help-body">${a.body||''}${a.actions?`<div class="help-actions">${helpArticleActions(a)}</div>`:''}</div></details>`).join('')
+}
+function openHelpSupport(){const msg='Suporte, preciso de ajuda na agenda/app.%0A%0AAtendimento para vagas, agenda e reaberturas: 10h às 20h, todos os dias.%0ASe eu enviar fora do horário, sei que a resposta fica para o próximo atendimento.%0A%0ANome:%0ACliente:%0ADia e horário:%0AO que aconteceu:%0A%0AEnvio print se precisar.';window.open('https://wa.me/'+SUPPORT_PHONE+'?text='+msg,'_blank')}
+
+function getSaoPauloNow(){return new Date(new Date().toLocaleString('en-US',{timeZone:'America/Sao_Paulo'}))}
+function pad2(n){return String(n).padStart(2,'0')}
+function currentWeekInfo(){
+  const now=getSaoPauloNow();
+  const d=new Date(now);
+  const day=d.getDay();
+  const minutes=d.getHours()*60+d.getMinutes();
+  if(day===1&&minutes<1)d.setDate(d.getDate()-1);
+  const diff=(d.getDay()+6)%7;
+  d.setDate(d.getDate()-diff);
+  d.setHours(0,1,0,0);
+  const id=d.getFullYear()+'-'+pad2(d.getMonth()+1)+'-'+pad2(d.getDate());
+  return {id,start:d};
+}
+function slotDocId(shiftId,day,index){return [shiftId,day,index].join('__')}
+function userDayDocId(uid,day){return uid+'__'+day}
+function isFirebaseReady(){return !!(firebaseOnline&&auth&&db)}
+function normalizeEmail(email){return String(email||'').trim().toLowerCase()}
+function adminRefForEmail(email){return db.collection('admins').doc(normalizeEmail(email))}
+async function checkAdminAccess(user=currentUser){
+  if(!isFirebaseReady()||!user||!user.email)return null;
+  const snap=await adminRefForEmail(user.email).get();
+  if(!snap.exists)return null;
+  const data=snap.data()||{};
+  const active=data.ativo===true && data.admin===true;
+  return active?{email:normalizeEmail(user.email),nome:data.nome||user.displayName||user.email,nivel:data.nivel||'admin'}:null;
+}
+function firebaseServerTime(){return firebase.firestore.FieldValue.serverTimestamp()}
+function initFirebase(){
+  currentWeekId=currentWeekInfo().id;
+  try{
+    if(!window.firebase){console.warn('Conexão ainda não carregou.');return}
+    fbApp=firebase.apps&&firebase.apps.length?firebase.app():firebase.initializeApp(FIREBASE_CONFIG);
+    auth=firebase.auth();
+    db=firebase.firestore();
+    authReadyResolved=false;
+    authReadyPromise=new Promise(resolve=>{resolveAuthReady=resolve});
+    auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL).catch(()=>{});
+    firebaseOnline=true;
+    handleAdminRedirectResult();
+    auth.onAuthStateChanged(async user=>{
+      currentUser=user||null;
+      if(currentUser){
+        localStorage.setItem('oe_last_name', currentUser.displayName||'');
+        await saveCurrentUser().catch(console.warn);
+      }
+      if(!authReadyResolved){authReadyResolved=true;if(resolveAuthReady)resolveAuthReady(currentUser);}
+      subscribeWeekBookings();
+      await restoreAdminSessionIfValid().catch(console.warn);
+      render();
+    });
+  }catch(e){console.warn('Falha ao iniciar conexão',e);firebaseOnline=false;}
+}
+async function saveCurrentUser(){
+  if(!isFirebaseReady()||!currentUser)return;
+  return db.collection('users').doc(currentUser.uid).set({
+    uid:currentUser.uid,
+    nome:currentUser.displayName||'',
+    email:currentUser.email||'',
+    role:'entregador',
+    ultimoLogin:firebaseServerTime()
+  },{merge:true});
+}
+
+async function createOperationNotification(type, rows, extra={}){
+  if(!isFirebaseReady()||!currentUser||!rows||!rows.length)return;
+  const weekId=currentWeekInfo().id;
+  const isReopen=type==='reabertura';
+  const first=rows[0];
+  const title=isReopen?'Vaga reaberta':'Nova reserva confirmada';
+  const subject=`${title} | ${first.client||first.s?.client||'Osasco Express'} | ${DAY_SHORT[first.day]||first.day}`;
+  const partner=extra.name||first.name||first.data?.name||currentUser.displayName||'Parceiro';
+  const lines=rows.map(r=>{
+    const client=r.client||r.s?.client||r.data?.client||'';
+    const time=r.time||r.s?.time||r.data?.time||'';
+    const day=r.day||r.data?.day||'';
+    const idx=r.index||r.i||r.data?.index||'';
+    return `- ${dayName(day)} · ${client} · ${time}${idx?` · vaga ${idx}`:''}`;
+  }).join('\n');
+  const payload={
+    type,weekId,partnerName:partner,partnerEmail:currentUser.email||'',rows:rows.map(r=>({
+      day:r.day||r.data?.day||'',client:r.client||r.s?.client||r.data?.client||'',time:r.time||r.s?.time||r.data?.time||'',index:r.index||r.i||r.data?.index||''
+    })),createdAt:firebaseServerTime()
+  };
+  try{await db.collection('weeks').doc(weekId).collection('notifications').add(payload);}catch(e){console.warn('Falha ao registrar notificação operacional',e);}
+  // E-mail automático ficou fora do escopo sem Blaze. O aviso fica salvo em notifications para o admin.
+}
+
+
+async function waitForAuthReady(timeout=2500){
+  if(authReadyResolved)return currentUser;
+  if(!authReadyPromise)return currentUser;
+  return Promise.race([
+    authReadyPromise,
+    new Promise(resolve=>setTimeout(()=>resolve(currentUser),timeout))
+  ]);
+}
+function firstNameFromUser(user){
+  const raw=(user&&user.displayName)||localStorage.getItem('oe_last_name')||'parceiro';
+  return String(raw).trim().split(/\s+/)[0]||'parceiro';
+}
+function welcomeUserOnce(user){
+  if(!user)return;
+  try{
+    const key='oe_welcome_uid_'+user.uid;
+    if(sessionStorage.getItem(key))return;
+    sessionStorage.setItem(key,'1');
+  }catch(e){}
+  toast(`Boa, ${firstNameFromUser(user)}. Suas reservas ficam salvas na sua conta.`);
+}
+async function requireGoogleLogin(){
+  await waitForAuthReady();
+  if(currentUser)return currentUser;
+  if(!isFirebaseReady())throw new Error('A conexão ainda está carregando. Atualize a página e tente de novo.');
+  const provider=new firebase.auth.GoogleAuthProvider();
+  try{
+    const res=await auth.signInWithPopup(provider);
+    currentUser=res.user;
+    await saveCurrentUser();
+    welcomeUserOnce(currentUser);
+    return currentUser;
+  }catch(e){
+    console.warn(e);
+    if(e&&['auth/popup-blocked','auth/cancelled-popup-request','auth/operation-not-supported-in-this-environment'].includes(e.code)){
+      await auth.signInWithRedirect(provider);
+      throw new Error('Abrindo login do Google...');
+    }
+    throw new Error('Login cancelado ou não autorizado.');
+  }
+}
+
+
+function isMobileAuthFlow(){return /Android|iPhone|iPad|iPod|Mobile|CriOS|FxiOS/i.test(navigator.userAgent||'')}
+function adminSessionIsValid(){return !!(currentAdminProfile&&adminSessionExpiresAt&&Date.now()<adminSessionExpiresAt)}
+function saveAdminSession(profile){
+  adminSessionExpiresAt=Date.now()+ADMIN_SESSION_TTL_MS;
+  currentAdminProfile=profile;
+  try{localStorage.setItem(ADMIN_SESSION_KEY,JSON.stringify({email:profile.email,nome:profile.nome||'',nivel:profile.nivel||'admin',expiresAt:adminSessionExpiresAt}))}catch(e){}
+  scheduleAdminExpiryCheck();
+}
+function clearAdminSession(){
+  stopAdminNotifications();
+  admin=false;currentAdminProfile=null;adminSessionExpiresAt=0;
+  try{localStorage.removeItem(ADMIN_SESSION_KEY);sessionStorage.removeItem(ADMIN_PENDING_REDIRECT_KEY)}catch(e){}
+  if(adminIdleTimer){clearTimeout(adminIdleTimer);adminIdleTimer=null;}
+}
+function touchAdminSession(){if(admin&&currentAdminProfile)saveAdminSession(currentAdminProfile)}
+function scheduleAdminExpiryCheck(){
+  if(adminIdleTimer)clearTimeout(adminIdleTimer);
+  const delay=Math.max(1000,(adminSessionExpiresAt||0)-Date.now()+250);
+  adminIdleTimer=setTimeout(()=>{
+    if(admin&&(!adminSessionExpiresAt||Date.now()>=adminSessionExpiresAt)){
+      clearAdminSession();render();toast('Acesso da gestão encerrado. Entre novamente.');
+    }
+  },delay);
+}
+async function restoreAdminSessionIfValid(){
+  if(!currentUser||!isFirebaseReady())return false;
+  let raw=null;try{raw=localStorage.getItem(ADMIN_SESSION_KEY)}catch(e){}
+  if(!raw)return false;
+  let saved=null;try{saved=JSON.parse(raw)}catch(e){}
+  if(!saved||!saved.expiresAt||Date.now()>=Number(saved.expiresAt)||normalizeEmail(saved.email)!==normalizeEmail(currentUser.email)){clearAdminSession();return false;}
+  const profile=await checkAdminAccess(currentUser).catch(()=>null);
+  if(!profile){clearAdminSession();return false;}
+  admin=true;currentAdminProfile=profile;adminSessionExpiresAt=Number(saved.expiresAt);scheduleAdminExpiryCheck();return true;
+}
+function adminProvider(){const provider=new firebase.auth.GoogleAuthProvider();provider.setCustomParameters({prompt:'select_account'});return provider;}
+async function selectGoogleAccount(){
+  if(!isFirebaseReady())throw new Error('A conexão ainda está carregando. Atualize a página e tente de novo.');
+  const provider=adminProvider();
+  try{
+    if(isMobileAuthFlow()){
+      sessionStorage.setItem(ADMIN_PENDING_REDIRECT_KEY,'1');
+      await auth.signInWithRedirect(provider);
+      throw new Error('Abrindo login do Google...');
+    }
+    const res=await auth.signInWithPopup(provider);
+    currentUser=res.user;
+    await saveCurrentUser();
+    return currentUser;
+  }catch(e){
+    console.warn(e);
+    if(e&&['auth/popup-blocked','auth/cancelled-popup-request','auth/operation-not-supported-in-this-environment'].includes(e.code)){
+      sessionStorage.setItem(ADMIN_PENDING_REDIRECT_KEY,'1');
+      await auth.signInWithRedirect(provider);
+      throw new Error('Abrindo login do Google...');
+    }
+    throw e;
+  }
+}
+async function handleAdminRedirectResult(){
+  try{
+    const pending=sessionStorage.getItem(ADMIN_PENDING_REDIRECT_KEY)==='1';
+    const res=await auth.getRedirectResult();
+    if(!pending&&!res.user)return;
+    sessionStorage.removeItem(ADMIN_PENDING_REDIRECT_KEY);
+    if(res.user){
+      currentUser=res.user;
+      await saveCurrentUser().catch(console.warn);
+      const profile=await checkAdminAccess(res.user).catch(()=>null);
+      if(profile){admin=true;saveAdminSession(profile);setTimeout(()=>{render();toast('Gestão liberada')},250);}
+      else{clearAdminSession();setTimeout(()=>toast('Acesso restrito à gestão da Osasco Express.'),250);}
+    }
+  }catch(e){console.warn('Falha no retorno do login admin',e);try{sessionStorage.removeItem(ADMIN_PENDING_REDIRECT_KEY)}catch(_){};}
+}
+async function requireAdminLogin(){
+  if(adminSessionIsValid())return currentAdminProfile;
+  clearAdminSession();
+  const user=await selectGoogleAccount();
+  const profile=await checkAdminAccess(user).catch(()=>null);
+  if(!profile){clearAdminSession();throw new Error('Acesso restrito à gestão da Osasco Express.');}
+  saveAdminSession(profile);
+  return profile;
+}
+['click','keydown','touchstart','mousemove','scroll'].forEach(evt=>document.addEventListener(evt,()=>{if(admin)touchAdminSession()},{passive:true}));
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&admin&&!adminSessionIsValid()){clearAdminSession();render();toast('Acesso da gestão encerrado. Entre novamente.')}});
+function subscribeWeekBookings(){
+  if(weekUnsub){weekUnsub();weekUnsub=null;}
+  if(!isFirebaseReady())return;
+  currentWeekId=currentWeekInfo().id;
+  weekUnsub=db.collection('weeks').doc(currentWeekId).collection('slots')
+    .where('status','==','ativa')
+    .onSnapshot(snap=>{
+      const remoteBookings={};
+      snap.forEach(doc=>{
+        const x=doc.data()||{};
+        if(!x.shiftId||!x.day||!x.index)return;
+        remoteBookings[key(x.shiftId,x.day,Number(x.index))]={
+          name:x.name||'',
+          uid:x.uid||'',
+          email:x.email||'',
+          createdAt:x.createdAt||'',
+          by:'firebase'
+        };
+      });
+      state.bookings=remoteBookings;
+      render();
+    },err=>{console.warn(err);toast('Não consegui sincronizar as reservas.');});
+}
+
+function shiftsConfigRef(){return db.collection('weeks').doc(currentWeekInfo().id).collection('config').doc('shifts')}
+function normalizeShiftConfig(list){
+  const base=clone(DEFAULT_SHIFTS);
+  const map=Object.fromEntries(base.map(s=>[s.id,s]));
+  if(Array.isArray(list)){
+    list.forEach(item=>{
+      if(!item||!item.id||!map[item.id])return;
+      const target=map[item.id];
+      if(item.slots&&typeof item.slots==='object'){
+        DAYS.forEach(([d])=>{
+          const n=Number(item.slots[d]);
+          if(Number.isFinite(n)&&n>=0)target.slots[d]=Math.floor(n);
+        });
+      }
+    });
+  }
+  return base;
+}
+function publicShiftConfig(){return state.shifts.map(s=>({id:s.id,slots:{...s.slots}}))}
+function subscribeWeekConfig(){
+  if(configUnsub){configUnsub();configUnsub=null;}
+  if(!isFirebaseReady())return;
+  configUnsub=shiftsConfigRef().onSnapshot(snap=>{
+    const data=snap.exists?(snap.data()||{}):{};
+    state.shifts=normalizeShiftConfig(data.shifts);
+    save(false);
+    render();
+  },err=>{console.warn('Falha ao ler configuração de vagas',err);});
+}
+async function saveShiftConfigOnline(){
+  if(!isFirebaseReady())return false;
+  await shiftsConfigRef().set({weekId:currentWeekInfo().id,shifts:publicShiftConfig(),updatedAt:firebaseServerTime(),updatedBy:(currentUser&&currentUser.email)||''},{merge:true});
+  return true;
+}
+
+function ensureAdminNotifications(){
+  if(!admin||!isFirebaseReady())return;
+  const weekId=currentWeekInfo().id;
+  if(notifUnsub&&currentWeekId===weekId)return;
+  if(notifUnsub){notifUnsub();notifUnsub=null;}
+  currentWeekId=weekId;
+  notifUnsub=db.collection('weeks').doc(weekId).collection('notifications')
+    .orderBy('createdAt','desc')
+    .limit(12)
+    .onSnapshot(snap=>{
+      state.notifications=[];
+      snap.forEach(doc=>state.notifications.push({id:doc.id,...(doc.data()||{})}));
+      if(admin)render();
+    },err=>{console.warn('Falha ao ler alertas internos',err);});
+}
+function stopAdminNotifications(){if(notifUnsub){notifUnsub();notifUnsub=null;}}
+function formatEventTime(v){
+  try{
+    let dt=null;
+    if(v&&typeof v.toDate==='function')dt=v.toDate();
+    else if(v instanceof Date)dt=v;
+    else if(v)dt=new Date(v);
+    if(!dt||isNaN(dt.getTime()))return 'agora';
+    return dt.toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
+  }catch(e){return 'agora'}
+}
+function renderAdminAlerts(){
+  const items=(state.notifications||[]).slice(0,6);
+  if(!items.length){
+    return `<section class="admin-alerts"><div class="admin-alerts-head"><b>Alertas recentes</b><span>Reserva e reabertura aparecem aqui</span></div><div class="empty">Sem alertas recentes nesta semana.</div></section>`;
+  }
+  return `<section class="admin-alerts"><div class="admin-alerts-head"><b>Alertas recentes</b><span>Atualização operacional da semana</span></div><div class="admin-alert-list">${items.map(n=>{
+    const isReopen=n.type==='reabertura';
+    const rows=Array.isArray(n.rows)?n.rows:[];
+    const first=rows[0]||{};
+    const count=rows.length;
+    const title=isReopen?'Vaga reaberta':'Reserva confirmada';
+    const partner=n.partnerName||'Parceiro';
+    const detail=count>1?`${count} horários · ${partner}`:`${dayName(first.day||'')} · ${first.client||''} · ${first.time||''}`;
+    const icon=isReopen?'⚠️':'✅';
+    return `<article class="admin-alert ${isReopen?'reabertura':'reserva'}"><span class="admin-alert-icon">${icon}</span><div class="admin-alert-body"><b>${title}</b><small>${esc(partner)} · ${esc(detail)}</small></div><span class="admin-alert-time">${formatEventTime(n.createdAt)}</span></article>`;
+  }).join('')}</div></section>`;
+}
+
+
+async function syncMyReservationsFromFirestore(){
+  if(!isFirebaseReady()||!currentUser)return [];
+  const weekId=currentWeekInfo().id;
+  currentWeekId=weekId;
+  const snap=await db.collection('weeks').doc(weekId).collection('slots').where('uid','==',currentUser.uid).get();
+  Object.keys(state.bookings||{}).forEach(k=>{if(state.bookings[k]&&state.bookings[k].uid===currentUser.uid)delete state.bookings[k];});
+  const rows=[];
+  snap.forEach(doc=>{
+    const x=doc.data()||{};
+    if(x.status!=='ativa'||!x.shiftId||!x.day||!x.index)return;
+    const k=key(x.shiftId,x.day,Number(x.index));
+    state.bookings[k]={name:x.name||currentUser.displayName||'',uid:x.uid||currentUser.uid,email:x.email||currentUser.email||'',createdAt:x.createdAt||'',by:'firebase'};
+    const sft=shift(x.shiftId);
+    if(sft)rows.push({k,b:state.bookings[k],sid:x.shiftId,d:x.day,i:Number(x.index),s:sft});
+  });
+  return rows;
+}
+function activeUserDayEntries(entries){return Array.isArray(entries)?entries.filter(e=>e&&e.status!=='reaberta'):[]}
+function hasEntryConflict(entries,targetShift){
+  for(const e of activeUserDayEntries(entries)){
+    const other=shift(e.shiftId);
+    if(!other)continue;
+    if(e.shiftId===targetShift.id)return 'Você já reservou esse ponto neste dia.';
+    if(overlaps(targetShift,other))return `Conflito com ${other.client} · ${other.time}.`;
+  }
+  return '';
+}
+async function reserveOnline(shiftId,days,name){
+  const user=await requireGoogleLogin();
+  const sft=shift(shiftId);
+  if(!sft)throw new Error('Ponto não encontrado.');
+  const weekId=currentWeekInfo().id;
+  const uniq=[...new Set(days)];
+  return db.runTransaction(async tx=>{
+    const plans=[];
+    for(const day of uniq){
+      const total=Number(sft.slots[day]||0);
+      const userDayRef=db.collection('weeks').doc(weekId).collection('userDays').doc(userDayDocId(user.uid,day));
+      const userDaySnap=await tx.get(userDayRef);
+      const entries=activeUserDayEntries(userDaySnap.exists?(userDaySnap.data().entries||[]):[]);
+      const conflict=hasEntryConflict(entries,sft);
+      const slotRefs=[]; const slotSnaps=[];
+      for(let i=1;i<=total;i++){
+        const ref=db.collection('weeks').doc(weekId).collection('slots').doc(slotDocId(shiftId,day,i));
+        slotRefs.push(ref);
+        slotSnaps.push(await tx.get(ref));
+      }
+      plans.push({day,total,userDayRef,userEntries:entries,conflict,slotRefs,slotSnaps});
+    }
+    const done=[]; const blocked=[]; const blockedDetails=[];
+    for(const p of plans){
+      if(p.total<=0){blocked.push(DAY_SHORT[p.day]);blockedDetails.push({day:p.day,reason:'sem_vaga',msg:'Esse ponto não abre neste dia.'});continue;}
+      if(p.conflict){blocked.push(DAY_SHORT[p.day]);blockedDetails.push({day:p.day,reason:p.conflict.includes('esse ponto')?'same':'conflict',msg:p.conflict});continue;}
+      let chosen=-1;
+      for(let idx=0;idx<p.slotSnaps.length;idx++){
+        const snap=p.slotSnaps[idx];
+        if(!snap.exists || (snap.data()&&snap.data().status!=='ativa')){chosen=idx;break;}
+      }
+      if(chosen<0){blocked.push(DAY_SHORT[p.day]);blockedDetails.push({day:p.day,reason:'lotado',msg:'Essa vaga acabou de ser preenchida.'});continue;}
+      const slotIndex=chosen+1;
+      const slotRef=p.slotRefs[chosen];
+      const bookingData={
+        weekId,slotId:slotDocId(shiftId,p.day,slotIndex),shiftId,day:p.day,index:slotIndex,
+        client:sft.client,time:sft.time,start:sft.start,end:sft.end,amount:dailyAmount(p.day),
+        uid:user.uid,name:name||user.displayName||'Parceiro',email:user.email||'',status:'ativa',
+        createdAt:firebaseServerTime(),updatedAt:firebaseServerTime()
+      };
+      tx.set(slotRef,bookingData);
+      const newEntries=[...p.userEntries,{shiftId,day:p.day,index:slotIndex,client:sft.client,time:sft.time,start:sft.start,end:sft.end,amount:dailyAmount(p.day),status:'ativa',slotId:bookingData.slotId,createdAt:new Date().toISOString()}];
+      tx.set(p.userDayRef,{weekId,uid:user.uid,day:p.day,entries:newEntries,updatedAt:firebaseServerTime()},{merge:true});
+      done.push({day:p.day,index:slotIndex,slotId:bookingData.slotId,client:sft.client,time:sft.time,amount:dailyAmount(p.day),name:bookingData.name,email:bookingData.email});
+    }
+    return {done,blocked,blockedDetails,weekId};
+  });
+}
+async function reopenOnline(keys){
+  const user=await requireGoogleLogin();
+  const weekId=currentWeekInfo().id;
+  return db.runTransaction(async tx=>{
+    const rows=[];
+    for(const k of keys){
+      const [sid,day,i]=String(k).split('|');
+      const sft=shift(sid); if(!sft)continue;
+      const ref=db.collection('weeks').doc(weekId).collection('slots').doc(slotDocId(sid,day,i));
+      const snap=await tx.get(ref);
+      if(!snap.exists)continue;
+      const data=snap.data()||{};
+      if(data.status!=='ativa')continue;
+      if(data.uid!==user.uid && !admin)continue;
+      rows.push({k,ref,data,sid,day,i:Number(i),s:sft});
+    }
+    const byDay={};
+    for(const r of rows){
+      if(!byDay[r.day]){
+        const userDayRef=db.collection('weeks').doc(weekId).collection('userDays').doc(userDayDocId(user.uid,r.day));
+        const snap=await tx.get(userDayRef);
+        byDay[r.day]={ref:userDayRef,entries:activeUserDayEntries(snap.exists?(snap.data().entries||[]):[])};
+      }
+    }
+    for(const r of rows){
+      tx.set(r.ref,{...r.data,status:'reaberta',reabertoEm:firebaseServerTime(),updatedAt:firebaseServerTime()},{merge:true});
+      const bucket=byDay[r.day];
+      bucket.entries=bucket.entries.filter(e=>!(e.shiftId===r.sid&&Number(e.index)===Number(r.i)));
+    }
+    Object.values(byDay).forEach(v=>tx.set(v.ref,{entries:v.entries,updatedAt:firebaseServerTime()},{merge:true}));
+    return rows;
+  });
+}
+
+function clone(o){return JSON.parse(JSON.stringify(o))}
+function readSavedState(){
+  try{
+    const raw=localStorage.getItem(STORAGE_KEY);
+    if(!raw)return null;
+    const saved=JSON.parse(raw);
+    if(saved&&Array.isArray(saved.shifts))return {shifts:saved.shifts,__schema:saved.__schema};
+  }catch(e){}
+  return null;
+}
+function load(){
+  const saved=readSavedState();
+  const schemaOk=saved&&saved.__schema===DATA_SCHEMA_VERSION;
+  state={shifts:saved&&Array.isArray(saved.shifts)?saved.shifts:clone(DEFAULT_SHIFTS),bookings:{},notifications:[]};
+  mergeDefaults(!schemaOk);
+  state.bookings={};
+  state.notifications=[];
+  state.__schema=DATA_SCHEMA_VERSION;
+  state.__version=APP_VERSION;
+  save(false);
+  LEGACY_STORAGE_KEYS.forEach(k=>{try{localStorage.removeItem(k)}catch(e){}});
+}
+function mergeDefaults(forceDefaults=false){
+  if(forceDefaults){
+    state={shifts:clone(DEFAULT_SHIFTS),bookings:{},notifications:[]};
+    return;
+  }
+  const map=Object.fromEntries((state.shifts||[]).map(s=>[s.id,s]));
+  DEFAULT_SHIFTS.forEach(d=>{
+    if(!map[d.id])state.shifts.push(clone(d));
+    else{
+      const s=map[d.id];
+      ['client','time','start','end','color'].forEach(k=>{s[k]=d[k]});
+      s.slots=s.slots||{};
+      DAYS.forEach(([day])=>{if(s.slots[day]===undefined)s.slots[day]=d.slots[day]});
+    }
+  });
+  const validIds=new Set(DEFAULT_SHIFTS.map(s=>s.id));
+  state.shifts=state.shifts.filter(s=>validIds.has(s.id));
+}
+function sanitizeBookings(){
+  const clean={};
+  const byPersonDay=[];
+  Object.entries(state.bookings||{}).forEach(([k,b])=>{
+    const parts=k.split('|');
+    if(parts.length!==3||!b||!b.name)return;
+    const [sid,day,iRaw]=parts, i=Number(iRaw), s=shift(sid);
+    if(!s||!DAYS.some(x=>x[0]===day)||!Number.isInteger(i)||i<1||i>Number(s.slots[day]||0))return;
+    const person=normName(b.name);
+    const conflict=byPersonDay.some(x=>x.person===person&&x.day===day&&overlaps(x.shift,s));
+    if(conflict)return;
+    clean[k]={name:String(b.name).trim(),uid:b.uid||'',email:b.email||'',createdAt:b.createdAt||new Date().toISOString(),by:b.by||'motoboy'};
+    byPersonDay.push({person,day,shift:s});
+  });
+  state.bookings=clean;
+}
+function save(show=true){state.__schema=DATA_SCHEMA_VERSION;state.__version=APP_VERSION;const safeState={__schema:DATA_SCHEMA_VERSION,__version:APP_VERSION,shifts:publicShiftConfig?publicShiftConfig():state.shifts};try{localStorage.setItem(STORAGE_KEY,JSON.stringify(safeState))}catch(e){}if(show)toast('Salvo')}
+function key(id,day,i){return id+'|'+day+'|'+i}
+function booking(id,day,i){return state.bookings[key(id,day,i)]||null}
+function count(id,day){const s=shift(id);let f=0,total=Number(s.slots[day]||0);for(let i=1;i<=total;i++)if(booking(id,day,i))f++;return {f,total,open:Math.max(total-f,0)}}
+function firstFree(id,day){const s=shift(id),total=Number(s.slots[day]||0);for(let i=1;i<=total;i++)if(!booking(id,day,i))return i;return null}
+function dailyAmount(day){return ['sex','sab','dom'].includes(day)?55:45}
+function money(day){return 'R$ '+dailyAmount(day)}
+function formatMoney(v){return 'R$ '+Number(v||0).toLocaleString('pt-BR',{minimumFractionDigits:0,maximumFractionDigits:0})}
+function sumRows(rows){return rows.reduce((t,r)=>t+dailyAmount(r.d),0)}
+function pluralTurnos(n){return n===1?'1 turno':n+' turnos'}
+function shift(id){return state.shifts.find(s=>s.id===id)}
+function activeShifts(){return state.shifts.filter(s=>filter.client==='all'||s.client===filter.client)}
+function clients(){return [...new Set(state.shifts.map(s=>s.client))]}
+function normName(v){return String(v||'').trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ')}
+function toMin(t){const m=String(t||'00:00').match(/(\d{1,2}):(\d{2})/);return m?Number(m[1])*60+Number(m[2]):0}
+function interval(s){let a=toMin(s.start),b=toMin(s.end);if(b<=a)b+=1440;return [a,b]}
+function overlaps(a,b){const A=interval(a),B=interval(b);return A[0]<B[1]&&B[0]<A[1]}
+function conflictFor(name,id,day){
+  const target=shift(id);
+  const hasLoggedUser=!!(currentUser&&currentUser.uid);
+  const typedName=normName(name);
+  if(!hasLoggedUser&&!typedName)return null;
+  for(const [k,b] of Object.entries(state.bookings||{})){
+    const sameUser=hasLoggedUser&&b&&b.uid&&b.uid===currentUser.uid;
+    const sameName=!hasLoggedUser&&typedName&&b&&normName(b.name)===typedName;
+    if(!sameUser&&!sameName)continue;
+    const [sid,d]=String(k).split('|');
+    if(d!==day)continue;
+    const other=shift(sid);
+    if(!other)continue;
+    if(sid===id)return {type:'same',msg:'Você já reservou esse ponto neste dia.'};
+    if(overlaps(target,other))return {type:'time',msg:`Conflito com ${other.client} · ${other.time}.`};
+  }
+  return null
+}
+function isMineBooking(b){
+  return !!(currentUser&&currentUser.uid&&b&&b.uid&&b.uid===currentUser.uid);
+}
+function myReservationKeyFor(id,day){
+  if(!currentUser||!currentUser.uid)return null;
+  for(const [k,b] of Object.entries(state.bookings||{})){
+    const [sid,d]=String(k).split('|');
+    if(sid===id&&d===day&&isMineBooking(b))return k;
+  }
+  return null
+}
+
+function openInlineReopen(k){if(!k){toast('Reserva não encontrada.');return}selectedReopenKeys=new Set([k]);document.getElementById('myName').value=(currentUser&&currentUser.displayName)||localStorage.getItem('oe_last_name')||'';openBulkReopen()}
+
+function clientVisual(client,small=false){
+  const img=CLIENT_LOGOS[client];
+  const icon=CLIENT_ICONS[client]||'🏍️';
+  if(img)return `<img ${small?'class="chip-logo"':'alt=""'} src="${img}" loading="lazy" decoding="async">`;
+  return small?`<span class="chip-emoji">${icon}</span>`:`<span class="emoji">${icon}</span>`;
+}
+function closeTopModal(){const opened=[...document.querySelectorAll('.modal.on')].pop();if(opened)closeModal(opened.id)}
+function ensureModalCloseButtons(){document.querySelectorAll('.modal .box').forEach(box=>{if(box.querySelector('.modal-close'))return;const modal=box.closest('.modal');const btn=document.createElement('button');btn.type='button';btn.className='modal-close';btn.setAttribute('aria-label','Fechar tela');btn.innerHTML='<span>Fechar</span>';btn.addEventListener('click',()=>closeModal(modal.id));box.insertBefore(btn,box.firstChild);});}
+
+function render(){document.body.classList.toggle('admin',admin);if(admin)ensureAdminNotifications();else stopAdminNotifications();renderToolbar();renderMetrics();renderCards();updateHeroCopy();document.getElementById('adminBtn').classList.toggle('on',admin);document.getElementById('adminBtn').innerHTML=admin?'🔓 <span class="txt">Gestão</span>':'🔒 <span class="txt">Gestão</span>'}
+function renderToolbar(){
+  if(admin)return renderAdminToolbar();
+  const dayButtons=[`<button class="chip ${filter.day==='all'?'on':''}" onclick="filter.day='all';render()">Semana</button>`]
+    .concat(DAYS.map(([d])=>`<button class="chip ${filter.day===d?'on':''}" onclick="filter.day='${d}';render()">${DAY_SHORT[d]}</button>`)).join('');
+  const clientOptions=[`<option value="all" ${filter.client==='all'?'selected':''}>Todos os clientes</option>`]
+    .concat(clients().map(c=>`<option value="${escAttr(c)}" ${filter.client===c?'selected':''}>${esc(short(c))}</option>`)).join('');
+  document.getElementById('toolbar').innerHTML=`<div class="filter-days" aria-label="Filtro por dia">${dayButtons}</div><label class="filter-client"><span>Cliente</span><select class="client-select" onchange="filter.client=this.value;render()">${clientOptions}</select></label>`;
+  document.getElementById('viewLabel').textContent=filter.day==='all'?'Semana completa':dayName(filter.day)
+}
+function renderMetrics(){
+  if(admin)return renderAdminMetrics();
+  let total=0,filled=0,open=0;state.shifts.forEach(s=>DAYS.forEach(([d])=>{if(filter.day!=='all'&&filter.day!==d)return;if(filter.client!=='all'&&filter.client!==s.client)return;const c=count(s.id,d);total+=c.total;filled+=c.f;open+=c.open}));document.getElementById('metrics').innerHTML=`<div class="metric"><b>${total}</b><span>Vagas</span></div><div class="metric"><b>${filled}</b><span>Reservadas</span></div><div class="metric"><b>${open}</b><span>Em aberto</span></div>`
+}
+function renderCards(){
+  if(admin)return renderAdminPanel();
+  const titleEl=document.querySelector('.section-title h3');
+  if(titleEl)titleEl.textContent='Clientes e horários';
+  let html='';activeShifts().forEach(s=>{const days=DAYS.filter(([d])=>filter.day==='all'||filter.day===d);const hasAny=days.some(([d])=>Number(s.slots[d]||0)>0);if(!hasAny&&!admin)return;let total=0,filled=0,open=0,mine=0;days.forEach(([d])=>{const c=count(s.id,d);total+=c.total;filled+=c.f;open+=c.open;if(myReservationKeyFor(s.id,d))mine++});const disabled=total<=0?'aria-disabled="true"':'';const actionText=mine?'Ver / ajustar':'Escolher';html+=`<article class="reserve-card" data-color="${s.color}"><div class="card-head" role="button" tabindex="0" ${disabled} onclick="${total>0?`openReserve('${s.id}')`:''}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();${total>0?`openReserve('${s.id}')`:''}}"><span class="client-mark">${clientVisual(s.client,false)}</span><div class="card-title"><b>${esc(s.client)}</b><small>${esc(s.time)}</small></div><span class="totalpill">${filled}/${total}</span></div><div class="day-grid">`;days.forEach(([d])=>{const c=count(s.id,d);const mineKey=myReservationKeyFor(s.id,d);let cls=mineKey?'mine':(c.total<=0?'none':(c.open>0?'open':'full'));const title=mineKey?'Já está nas suas reservas':(c.total<=0?'Sem vaga neste dia':(c.open>0?'Toque para reservar este dia':'Lotado'));html+=`<button class="day-pill ${cls}" title="${title}" onclick="openReserve('${s.id}','${d}')" ${c.total<=0?'disabled':''}><b>${DAY_SHORT[d]}</b><span class="occ">${c.f}/${c.total}</span>${mineKey?'<span class="mine-badge">Minha</span>':`<span class="rate">${c.total>0?money(d):'—'}</span>`}</button>`});html+=`</div><div class="card-actions"><button class="btn primary" onclick="openReserve('${s.id}')" ${total<=0?'disabled':''}>${actionText}</button></div></article>`});document.getElementById('cards').innerHTML=html||'<div class="empty">Nenhuma vaga encontrada neste filtro.</div>'
+}
+/* ===== ADMIN OPERACIONAL ===== */
+function todayKey(){return ['dom','seg','ter','qua','qui','sex','sab'][getSaoPauloNow().getDay()]||'seg'}
+function adminSelectedDays(){if(adminView==='semana'||adminView==='gargalos')return DAYS.map(x=>x[0]);if(adminView==='dia')return [adminDay||todayKey()];return [todayKey()]}
+function setAdminView(v){adminView=v;if(v==='hoje')adminDay=todayKey();if(v==='dia'&&!adminDay)adminDay=todayKey();render()}
+function setAdminDay(d){adminView='dia';adminDay=d;render()}
+function setAdminDayClient(d,client){adminView='dia';adminDay=d;filter.client=client||'all';render()}
+function renderAdminToolbar(){
+  if(!adminDay)adminDay=todayKey();
+  const viewButtons=[['hoje','Hoje'],['semana','Semana'],['dia','Escolher dia'],['gargalos','Vagas abertas']].map(([v,l])=>`<button class="chip ${adminView===v?'on':''} ${v==='gargalos'?'danger':''}" onclick="setAdminView('${v}')">${l}</button>`).join('');
+  const dayButtons=DAYS.map(([d])=>`<button class="chip ${adminView==='dia'&&adminDay===d?'on':''}" onclick="setAdminDay('${d}')">${DAY_SHORT[d]}</button>`).join('');
+  const dayOptions=DAYS.map(([d,n])=>`<option value="${d}" ${adminDay===d?'selected':''}>${n}</option>`).join('');
+  const clientOptions=[`<option value="all" ${filter.client==='all'?'selected':''}>Todos os clientes</option>`].concat(clients().map(c=>`<option value="${escAttr(c)}" ${filter.client===c?'selected':''}>${esc(short(c))}</option>`)).join('');
+  const tools=`<div class="filter-admin"><label class="admin-inline-select"><span>Dia</span><select onchange="setAdminDay(this.value)">${dayOptions}</select></label><button class="chip green" onclick="openEditCounts()">Editar vagas</button><button class="chip" onclick="refreshFirebaseData()">Atualizar tela</button><button class="chip" onclick="copySummary()">Copiar resumo</button><button class="chip green" onclick="openAdminPrint()">Imprimir agenda</button></div>`;
+  document.getElementById('toolbar').innerHTML=`<div class="filter-days" aria-label="Visão da gestão">${viewButtons}${dayButtons}</div><label class="filter-client"><span>Cliente</span><select class="client-select" onchange="filter.client=this.value;render()">${clientOptions}</select></label>${tools}`;
+  document.getElementById('viewLabel').textContent=adminView==='semana'?'Semana':adminView==='gargalos'?'Vagas abertas':adminView==='dia'?dayName(adminDay):'Hoje';
+}
+function adminRows(days=adminSelectedDays()){
+  const rows=[];
+  state.shifts.forEach(s=>{if(filter.client!=='all'&&filter.client!==s.client)return;days.forEach(day=>{const total=Number(s.slots[day]||0);if(total<=0)return;const people=[];for(let i=1;i<=total;i++){const b=booking(s.id,day,i);people.push({index:i,name:b?b.name:'',uid:b?b.uid:'',email:b?b.email:''});}const filled=people.filter(p=>p.name).length;rows.push({sid:s.id,shift:s,day,total,filled,open:Math.max(total-filled,0),people});});});
+  const order=Object.fromEntries(DAYS.map(([d],i)=>[d,i]));
+  rows.sort((a,b)=>order[a.day]-order[b.day]||a.shift.client.localeCompare(b.shift.client)||String(a.shift.start).localeCompare(String(b.shift.start)));
+  return rows;
+}
+function adminTone(row){if(row.total<=0)return 'off';if(row.filled===0)return 'risk';if(row.filled>=row.total)return 'ok';return 'warn'}
+function renderAdminMetrics(){const rows=adminRows();const total=rows.reduce((t,r)=>t+r.total,0),filled=rows.reduce((t,r)=>t+r.filled,0),open=rows.reduce((t,r)=>t+r.open,0),risk=rows.filter(r=>r.open>0).length;document.getElementById('metrics').innerHTML=`<div class="metric"><b>${filled}/${total}</b><span>Preenchidas</span></div><div class="metric"><b>${open}</b><span>Abertas</span></div><div class="metric"><b>${risk}</b><span>Com vaga aberta</span></div>`}
+function updateHeroCopy(){const h=document.querySelector('.hero h2'),p=document.querySelector('.hero p');if(!h||!p)return;if(admin){h.innerHTML='Cobertura da semana';p.innerHTML='Meta: <strong>100% das vagas preenchidas</strong>. Veja nomes, vagas abertas e times fechados por cliente, dia e horário.'}else{h.innerHTML='Escolha seus horários da semana';p.innerHTML='Reserve seus pontos por dia e acompanhe tudo em “Minhas reservas”.'}}
+function renderAdminPanel(){
+  let html=`<div class="admin-panel"><div class="admin-topline"><div class="admin-title"><b>${adminView==='semana'?'Semana':adminView==='gargalos'?'Vagas abertas':adminView==='dia'?dayName(adminDay):'Hoje'}</b><span>Veja nomes, vagas abertas e pontos fechados.</span></div><span class="admin-sync">Semana atual${currentAdminProfile&&currentAdminProfile.nome?' · '+esc(currentAdminProfile.nome):''}</span></div>`;
+  html+=renderAdminAlerts();
+  if(adminView==='semana')html+=renderAdminWeek();
+  else if(adminView==='gargalos')html+=renderAdminGargalos();
+  else html+=renderAdminDayCards(adminRows());
+  html+='</div>';
+  document.getElementById('cards').innerHTML=html;
+  document.querySelector('.section-title h3').textContent='Cobertura';
+}
+function renderAdminDayCards(rows){if(!rows.length)return '<div class="empty">Nenhum ponto encontrado neste filtro.</div>';return `<div class="admin-cards">${rows.map(adminCardHTML).join('')}</div>`}
+function adminCardHTML(r){const tone=adminTone(r),pct=r.total?Math.round((r.filled/r.total)*100):0,large=r.total>=9;let peopleHtml='';const shown=large?r.people.filter(p=>p.name).slice(0,4):r.people;shown.forEach(p=>{peopleHtml+=`<div class="admin-person ${p.name?'filled':''}"><span class="num">${p.index}</span><span>${p.name?esc(p.name):'Vaga aberta'}</span></div>`});if(large){const extra=Math.max(r.filled-shown.length,0);if(extra>0)peopleHtml+=`<div class="admin-more">+ ${extra} parceiros confirmados</div>`;peopleHtml+=`<div class="admin-more">Reservados: ${r.filled} · Abertas: ${r.open}</div>`}
+  const status=r.filled>=r.total?'✅ Time fechado':r.filled===0?'🚨 Sem parceiro reservado':`⚠ ${r.open===1?'Falta 1 parceiro':'Faltam '+r.open+' parceiros'}`;
+  const msgBtn=r.filled>=r.total?`<button class="mini green" onclick="openAdminMessage('${r.sid}','${r.day}')">Mensagem time fechado</button>`:'';
+  return `<article class="admin-card" data-tone="${tone}"><div class="admin-card-head"><span class="admin-logo">${clientVisual(r.shift.client,false)}</span><div class="admin-main"><b>${esc(r.shift.client)}</b><small>${dayName(r.day)} · ${esc(r.shift.time)}</small></div><span class="admin-occ">${r.filled}/${r.total}</span></div><div class="admin-body"><div class="admin-progress"><span style="width:${pct}%"></span></div><div class="admin-status">${status}</div><div class="admin-people">${peopleHtml}</div></div><div class="admin-actions"><button class="mini dark" onclick="openAdminTeam('${r.sid}','${r.day}')">Ver equipe</button>${r.filled<r.total?`<button class="mini amber" onclick="copyAdminPartial('${r.sid}','${r.day}')">Copiar parcial</button>`:msgBtn}</div></article>`}
+function renderAdminWeek(){const shifts=activeShifts().filter(s=>DAYS.some(([d])=>Number(s.slots[d]||0)>0));if(!shifts.length)return '<div class="empty">Nenhum ponto configurado.</div>';return `<div class="admin-week-grid">${shifts.map(s=>{let total=0,filled=0;DAYS.forEach(([d])=>{const c=count(s.id,d);total+=c.total;filled+=c.f});return `<article class="admin-week-card"><div class="admin-week-head"><span class="admin-logo">${clientVisual(s.client,false)}</span><div class="admin-main"><b>${esc(s.client)}</b><small>${esc(s.time)} · semana ${filled}/${total}</small></div></div><div class="admin-week-days">${DAYS.map(([d])=>{const c=count(s.id,d);const cls=c.total<=0?'off':c.f>=c.total?'ok':c.f===0?'risk':'warn';return `<button class="admin-daybox ${cls}" onclick="setAdminDayClient('${d}','${escAttr(s.client)}')"><b>${DAY_SHORT[d]}</b><span>${c.f}/${c.total}</span></button>`}).join('')}</div></article>`}).join('')}</div>`}
+function renderAdminGargalos(){const rows=adminRows().filter(r=>r.open>0).sort((a,b)=>b.open-a.open||a.day.localeCompare(b.day));if(!rows.length)return '<div class="empty">Tudo fechado nesta visão. Nenhuma vaga aberta encontrada.</div>';return `<div class="admin-gargalos">${rows.map(r=>`<div class="gargalo-card ${r.filled>0?'warn':''}"><div class="gargalo-top"><span class="admin-logo">${clientVisual(r.shift.client,false)}</span><div class="gargalo-info"><b>${esc(r.shift.client)}</b><small>${dayName(r.day)} · ${esc(r.shift.time)}</small></div><span class="admin-occ">${r.filled}/${r.total}</span></div><div class="gargalo-miss">${r.filled===0?'Sem parceiro reservado':(r.open===1?'Falta 1 parceiro':'Faltam '+r.open+' parceiros')}</div><button class="mini dark" onclick="openAdminTeam('${r.sid}','${r.day}')">Ver equipe</button></div>`).join('')}</div>`}
+function getAdminRow(sid,day){return adminRows([day]).find(r=>r.sid===sid&&r.day===day)}
+function openAdminTeam(sid,day){const r=getAdminRow(sid,day);if(!r)return;currentAdminRow=r;document.getElementById('adminTeamTitle').textContent=`${r.shift.client} · ${dayName(day)}`;document.getElementById('adminTeamDesc').textContent=`${r.shift.time} · ${r.filled}/${r.total} preenchidas`;document.getElementById('adminTeamList').innerHTML=r.people.map(p=>`<div class="team-item ${p.name?'':'open'}">${p.index}. ${p.name?esc(p.name):'Vaga aberta'}</div>`).join('');document.getElementById('adminTeamMessageBtn').style.display=r.filled>=r.total?'block':'none';openModal('adminTeamModal')}
+function openTeamMessageFromModal(){if(currentAdminRow)openAdminMessage(currentAdminRow.sid,currentAdminRow.day)}
+function adminTeamMessage(r){const list=r.people.filter(p=>p.name).map((p,i)=>`${i+1}. ${p.name}`).join('\n');return `✅ Time fechado | ${r.shift.client}\n\n${dayName(r.day)} · ${r.shift.time}\n\nParceiros confirmados:\n${list}\n\nBom turno, time.\nOsasco Express`}
+function openAdminMessage(sid,day){const r=getAdminRow(sid,day);if(!r)return;if(r.filled<r.total){toast('Ainda não está 100% preenchido.');return}currentAdminMessage=adminTeamMessage(r);document.getElementById('adminMessageBox').textContent=currentAdminMessage;openModal('adminMessageModal')}
+function copyAdminTeamMessage(){if(!currentAdminMessage)return;navigator.clipboard.writeText(currentAdminMessage).then(()=>toast('Mensagem copiada')).catch(()=>prompt('Copie:',currentAdminMessage))}
+function copyAdminPartial(sid,day){const r=getAdminRow(sid,day);if(!r)return;const names=r.people.map(p=>`${p.name?'✅':'⬜'} ${p.index}. ${p.name||'Vaga aberta'}`).join('\n');const msg=`${r.shift.client} · ${dayName(day)} · ${r.shift.time}\n${r.filled}/${r.total} preenchidas\n\n${names}`;navigator.clipboard.writeText(msg).then(()=>toast('Parcial copiada')).catch(()=>prompt('Copie:',msg))}
+function printRowsForMode(mode){
+  if(mode==='week')return adminRows(DAYS.map(x=>x[0]));
+  if(mode==='gaps')return adminRows(DAYS.map(x=>x[0])).filter(r=>r.open>0);
+  const d=mode==='today'?todayKey():(adminDay||todayKey());
+  return adminRows([d]);
+}
+function printModeTitle(mode){
+  if(mode==='week')return 'Escala semanal';
+  if(mode==='gaps')return 'Vagas abertas';
+  const d=mode==='today'?todayKey():(adminDay||todayKey());
+  return `Escala operacional · ${dayName(d)}`;
+}
+function rowStatusText(r){
+  if(r.filled>=r.total)return 'Time fechado';
+  if(r.filled===0)return 'Sem parceiro reservado';
+  return r.open===1?'Falta 1 parceiro':`Faltam ${r.open} parceiros`;
+}
+function rowStatusClass(r){return r.filled>=r.total?'ok':(r.filled===0?'risk':'warn')}
+function printSummaryHTML(rows){
+  const total=rows.reduce((t,r)=>t+r.total,0),filled=rows.reduce((t,r)=>t+r.filled,0),open=rows.reduce((t,r)=>t+r.open,0),risk=rows.filter(r=>r.open>0).length;
+  return `<div class="print-summary"><div class="print-metric"><b>${filled}/${total}</b><span>Preenchidas</span></div><div class="print-metric"><b>${open}</b><span>Abertas</span></div><div class="print-metric"><b>${risk}</b><span>Pontos em risco</span></div><div class="print-metric"><b>${formatNowShort()}</b><span>Gerado em</span></div></div>`;
+}
+function formatNowShort(){const dt=new Date();return dt.toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})}
+function printSlotHTML(r){
+  const people=r.people.map(p=>`<div class="print-person ${p.name?'':'open'}">${p.index}. ${p.name?esc(p.name):'Vaga aberta'}</div>`).join('');
+  const cls=rowStatusClass(r);
+  return `<section class="print-slot"><div class="print-slot-head"><div><b>${esc(r.shift.client)}</b><small>${dayName(r.day)} · ${esc(r.shift.time)}</small></div><span class="print-occ">${r.filled}/${r.total}</span></div><div class="print-status ${cls}">${rowStatusText(r)}</div><div class="print-people">${people}</div></section>`;
+}
+function printDayHTML(rows,mode){
+  const order=Object.fromEntries(DAYS.map(([d],i)=>[d,i]));
+  const byDay={};rows.forEach(r=>{(byDay[r.day]||(byDay[r.day]=[])).push(r)});
+  const days=Object.keys(byDay).sort((a,b)=>order[a]-order[b]);
+  let body='';
+  days.forEach(d=>{body+=`<h3 class="print-day-title">${dayName(d)}</h3>`+byDay[d].map(printSlotHTML).join('')});
+  if(!body)body='<div class="empty">Nenhum ponto encontrado para impressão.</div>';
+  return printSheetHTML(printModeTitle(mode),mode==='gaps'?'Somente pontos com vaga aberta.':'Conferência por cliente, dia e turno.',rows,body);
+}
+function printWeekHTML(rows){
+  const shifts=activeShifts().filter(s=>DAYS.some(([d])=>Number(s.slots[d]||0)>0));
+  let table=`<table class="print-week-table"><thead><tr><th>Cliente / turno</th>${DAYS.map(([d])=>`<th>${DAY_SHORT[d]}</th>`).join('')}</tr></thead><tbody>`;
+  shifts.forEach(s=>{table+=`<tr><td><b>${esc(s.client)}</b><br><span>${esc(s.time)}</span></td>`;DAYS.forEach(([d])=>{const c=count(s.id,d);const cls=c.total<=0?'off':c.f>=c.total?'ok':c.f===0?'risk':'warn';table+=`<td class="${cls}">${c.f}/${c.total}</td>`});table+='</tr>'});
+  table+='</tbody></table>';
+  return printSheetHTML('Semana de cobertura','Resumo 0/x por cliente e turno. Use a visão detalhada para conferir nomes antes de imprimir.',rows,table);
+}
+function printSheetHTML(title,subtitle,rows,content){
+  const clientLabel=filter.client&&filter.client!=='all'?`Cliente: ${esc(filter.client)}`:'Todos os clientes';
+  return `<div class="print-head"><div><h2>${esc(title)}</h2><p>${esc(subtitle)}</p></div><div class="print-meta">Osasco Express<br>${clientLabel}<br>Semana: ${esc(weekId)}</div></div>${printSummaryHTML(rows)}${content}<div class="print-note">Documento operacional gerado pela agenda. Confira o horário de geração antes de usar na operação.</div>`;
+}
+function buildAdminPrint(mode='current'){
+  const resolved=mode==='current'?(adminView==='semana'?'week':adminView==='gargalos'?'gaps':'selected'):mode;
+  const rows=printRowsForMode(resolved);
+  const html=resolved==='week'?printWeekHTML(rows):printDayHTML(rows,resolved);
+  const area=document.getElementById('adminPrintArea');
+  if(area)area.innerHTML=html;
+  currentAdminMessage=printTextFromRows(rows,resolved);
+}
+function openAdminPrint(){
+  buildAdminPrint('current');
+  openModal('adminPrintModal');
+}
+function printTextFromRows(rows,mode){
+  let out=[printModeTitle(mode),`Semana: ${weekId}`,`Gerado em: ${new Date().toLocaleString('pt-BR')}`,''];
+  rows.forEach(r=>{out.push(`${r.shift.client} · ${dayName(r.day)} · ${r.shift.time} · ${r.filled}/${r.total}`);out.push(rowStatusText(r));r.people.forEach(p=>out.push(`${p.index}. ${p.name||'Vaga aberta'}`));out.push('')});
+  return out.join('\n');
+}
+function copyAdminPrintText(){
+  const txt=currentAdminMessage||'';
+  if(!txt){toast('Nada para copiar');return;}
+  navigator.clipboard.writeText(txt).then(()=>toast('Escala copiada')).catch(()=>prompt('Copie:',txt));
+}
+function printAdminScale(){
+  document.body.classList.add('print-admin');
+  setTimeout(()=>window.print(),80);
+}
+window.addEventListener('afterprint',()=>document.body.classList.remove('print-admin'));
+function openReserve(id,preDay){
+  currentShift=id;selectedDays=new Set();const s=shift(id);const name=localStorage.getItem('oe_last_name')||'';
+  document.getElementById('reserveTitle').textContent=`${s.client} · ${s.time}`;
+  document.getElementById('reserveDesc').innerHTML=`Marque os dias que combinam com você. Sua reserva entra no seu nome.`;
+  document.getElementById('partnerName').value=name;
+  if(preDay){const st=statusForDay(id,preDay,name);if(st.ok)selectedDays.add(preDay)}
+  refreshReserveDays();openModal('reserveModal');setTimeout(()=>document.getElementById('partnerName').focus(),60)
+}
+function statusForDay(id,day,name){
+  const c=count(id,day);
+  if(c.total<=0)return {ok:false,cls:'blocked',text:'Sem vaga',detail:'Esse ponto não abre neste dia.'};
+  const conf=conflictFor(name,id,day);
+  if(conf&&conf.type==='same'){
+    const k=myReservationKeyFor(id,day);
+    return {ok:false,cls:'blocked already-mine',text:`${c.f}/${c.total}`,detail:'Minha reserva',action:'Reabrir',key:k};
+  }
+  if(c.open<=0)return {ok:false,cls:'full',text:`${c.f}/${c.total}`,detail:'Lotado'};
+  if(conf)return {ok:false,cls:'blocked conflict-day',text:`${c.f}/${c.total}`,detail:conf.msg};
+  return {ok:true,cls:'',text:`${c.f}/${c.total}`,detail:'Toque para marcar'}
+}
+function refreshReserveDays(){
+  const name=document.getElementById('partnerName').value;
+  let html='';let already=0, blocked=0, available=0;
+  DAYS.forEach(([d,n])=>{
+    if(filter.day!=='all'&&filter.day!==d)return;
+    const st=statusForDay(currentShift,d,name);
+    if(!st.ok)selectedDays.delete(d); else available++;
+    if(st.cls.includes('already-mine'))already++;
+    if(!st.ok&&!st.cls.includes('already-mine'))blocked++;
+    const selected=selectedDays.has(d);
+    const action=selected?'Selecionado':st.detail;
+    let extra='';
+    if(st.cls.includes('already-mine')){
+      extra=`<div class="reserve-day-actions"><button class="mini red" type="button" onclick="event.stopPropagation();openInlineReopen('${escAttr(st.key||'')}')">Reabrir</button><button class="mini" type="button" onclick="event.stopPropagation();closeModal('reserveModal');openMyReservations();">Ver minhas reservas</button></div>`;
+    }
+    html+=`<button class="day-choice ${selected?'selected ':''}${st.cls}" onclick="toggleReserveDay('${d}')" type="button" ${st.ok?'':'aria-disabled="true"'}><span class="choice-top"><b>${n}</b><span class="choice-rate">${money(d)}</span></span><span class="choice-occ">${st.text}</span><small>${esc(action)}</small>${extra}</button>`
+  });
+  if(already>0&&available>0)html+=`<div class="reserve-feedback ok">Os dias marcados como “Minha reserva” já estão no seu nome. Você pode reabrir por aqui ou marcar outros dias disponíveis.</div>`;
+  else if(!available&&already>0)html+=`<div class="reserve-feedback ok">Esse ponto já está nas suas reservas nos dias exibidos. Reabra por aqui ou consulte em “Minhas reservas”.</div>`;
+  else if(!available&&blocked>0)html+=`<div class="reserve-feedback warn">Nenhum dia disponível neste ponto agora. Veja outro horário ou consulte suas reservas.</div>`;
+  document.getElementById('reserveDays').innerHTML=html
+}
+function toggleReserveDay(day){const name=document.getElementById('partnerName').value.trim();if(name.length<2){toast('Coloque seu nome primeiro');document.getElementById('partnerName').focus();return}const st=statusForDay(currentShift,day,name);if(!st.ok){toast(st.detail);return}selectedDays.has(day)?selectedDays.delete(day):selectedDays.add(day);refreshReserveDays()}
+function selectAllPossible(){const name=document.getElementById('partnerName').value.trim();if(name.length<2){toast('Coloque seu nome primeiro');document.getElementById('partnerName').focus();return}DAYS.forEach(([d])=>{if(filter.day!=='all'&&filter.day!==d)return;if(statusForDay(currentShift,d,name).ok)selectedDays.add(d)});refreshReserveDays()}
+async function confirmReservation(){
+  const typedName=document.getElementById('partnerName').value.trim();
+  if(typedName.length<2){toast('Coloque seu nome');return}
+  if(!selectedDays.size){toast('Escolha pelo menos um dia');return}
+  const days=[...selectedDays];
+  try{
+    toast('Entrando com Google para salvar...');
+    const user=await requireGoogleLogin();
+    welcomeUserOnce(user);
+    const name=typedName||user.displayName||'Parceiro';
+    document.getElementById('partnerName').value=name;
+    const result=await reserveOnline(currentShift,days,name);
+    localStorage.setItem('oe_last_name',name);
+    if(!result.done.length){
+      selectedDays=new Set();
+      refreshReserveDays();
+      const reasons=(result.blockedDetails||[]).map(x=>x.msg);
+      const unique=[...new Set(reasons)];
+      if(unique.some(x=>String(x).includes('já reservou')||String(x).includes('esse ponto'))){toast('Esses horários já estão nas suas reservas.')}
+      else if(unique.length){toast(unique[0])}
+      else{toast('Nenhum horário foi confirmado. Veja os dias disponíveis.')}
+      return;
+    }
+    selectedDays=new Set();
+    closeModal('reserveModal');
+    await syncMyReservationsFromFirestore().catch(console.warn);
+    render();
+    const total=result.done.reduce((t,x)=>t+dailyAmount(x.day),0);
+    createOperationNotification('reserva',result.done,{name}).catch(console.warn);
+    toast(result.done.length===1?`1 horário confirmado · ${formatMoney(total)}`:`${result.done.length} horários confirmados · ${formatMoney(total)}`);
+    if(result.blocked&&result.blocked.length)setTimeout(()=>toast('Alguns dias não entraram: '+result.blocked.join(', ')),1400);
+  }catch(e){console.warn(e);toast(e.message||'Não consegui salvar a reserva.')}
+}
+async function openMyReservations(){
+  try{
+    await requireGoogleLogin();
+    welcomeUserOnce(currentUser);
+    document.getElementById('myName').value=currentUser.displayName||localStorage.getItem('oe_last_name')||'';
+    await syncMyReservationsFromFirestore().catch(console.warn);
+  }catch(e){toast(e.message||'Faça login para ver suas reservas.');return;}
+  selectedReopenKeys=new Set();
+  findMine();
+  openModal('myModal');
+}
+function mineReservations(){
+  let rows=[];
+  if(!currentUser||!currentUser.uid)return rows;
+  Object.entries(state.bookings||{}).forEach(([k,b])=>{
+    if(!b||b.uid!==currentUser.uid)return;
+    const [sid,d,i]=String(k).split('|'),s=shift(sid);
+    if(!s)return;
+    rows.push({k,b,sid,d,i,s});
+  });
+  const dayOrder=Object.fromEntries(DAYS.map(([d],idx)=>[d,idx]));
+  rows.sort((a,b)=>dayOrder[a.d]-dayOrder[b.d]||String(a.s.start).localeCompare(String(b.s.start))||a.s.client.localeCompare(b.s.client)||Number(a.i)-Number(b.i));
+  return rows
+}
+
+function findMine(){selectedReopenKeys=new Set();renderMineResults()}
+function renderMineResults(){const rows=mineReservations();if(!currentUser||!currentUser.uid){document.getElementById('myResults').innerHTML='<div class="empty">Entre com Google para consultar suas reservas salvas.</div>';return}if(!rows.length){document.getElementById('myResults').innerHTML='<div class="empty">Nenhum horário encontrado para sua conta nesta semana.</div>';return}const totalMoney=sumRows(rows);let html=`<div class="mine-summary"><b>${pluralTurnos(rows.length)} reservados · ${formatMoney(totalMoney)}</b><span>Reservas da semana</span></div>`;html+='<div class="reopen-tools"><button class="mini" type="button" onclick="selectAllMineReservations()">Marcar todas</button><button class="mini" type="button" onclick="clearReopenSelection()">Limpar</button></div>';rows.forEach(r=>{const checked=selectedReopenKeys.has(r.k);html+=`<div class="booking reopen-selectable ${checked?'selected':''}" onclick="toggleReopenSelection('${escAttr(r.k)}')"><span class="checkdot" aria-hidden="true"></span><div class="grow"><b>${DAY_SHORT[r.d]} · ${esc(r.s.client)}</b><small>${esc(r.s.time)}</small></div><span class="money">${money(r.d)}</span></div>`});html+=`<div class="bulk-bar"><div class="bulk-count" id="bulkCount">${selectedReopenKeys.size} selecionada(s)</div><button class="btn danger block" onclick="openBulkReopen()">Reabrir selecionadas e avisar suporte</button></div>`;document.getElementById('myResults').innerHTML=html}
+function toggleReopenSelection(k){selectedReopenKeys.has(k)?selectedReopenKeys.delete(k):selectedReopenKeys.add(k);renderMineResults()}
+function selectAllMineReservations(){const rows=mineReservations();selectedReopenKeys=new Set(rows.map(r=>r.k));renderMineResults()}
+function clearReopenSelection(){selectedReopenKeys=new Set();renderMineResults()}
+function openReopen(k){selectedReopenKeys=new Set([k]);openBulkReopen()}
+function openBulkReopen(){const rows=mineReservations().filter(r=>selectedReopenKeys.has(r.k));if(!rows.length){toast('Selecione pelo menos uma reserva');return}reopenKeys=rows.map(r=>r.k);const totalMoney=sumRows(rows);document.getElementById('reopenText').innerHTML=`Você selecionou <strong>${pluralTurnos(rows.length)}</strong>. Ao reabrir, a vaga volta para a agenda. Depois envie o aviso para o suporte tentar cobrir a tempo.`;document.getElementById('reopenSummary').innerHTML=rows.map(r=>`<div>${DAY_SHORT[r.d]} · ${esc(r.s.client)}<small>${esc(r.s.time)} <span class="money">${money(r.d)}</span></small></div>`).join('');closeModal('myModal');openModal('reopenModal')}
+async function confirmReopen(){
+  try{
+    const rows=await reopenOnline(reopenKeys);
+    if(!rows.length){toast('Nenhuma reserva foi reaberta.');return;}
+    closeModal('reopenModal');
+    await syncMyReservationsFromFirestore().catch(console.warn);
+    render();
+    const name=rows[0].data.name||currentUser.displayName||'Parceiro';
+    const lista=rows.map(r=>`• ${dayName(r.day)} · ${r.s.client} · ${r.s.time}`).join('\n');
+    const txt=`Suporte, preciso reabrir minha reserva.\n\nNome: ${name}\n\nReservas reabertas:\n${lista}\n\nReabri no app para dar tempo de tentar uma substituição e não prejudicar a operação.`;
+    createOperationNotification('reabertura',rows,{name}).catch(console.warn);
+    selectedReopenKeys=new Set();reopenKeys=[];
+    currentSupportMessage=txt;
+    document.getElementById('supportNoticeText').textContent=rows.length>1?'As reservas foram reabertas na agenda. Envie o aviso para o suporte tentar cobrir esses horários a tempo.':'A reserva foi reaberta na agenda. Envie o aviso para o suporte tentar cobrir esse horário a tempo.';
+    document.getElementById('supportMessageBox').textContent=txt;
+    openModal('supportModal');
+    toast(rows.length>1?`${rows.length} reservas reabertas.`:'Reserva reaberta.');
+  }catch(e){console.warn(e);toast(e.message||'Não consegui reabrir agora.');}
+}
+function copySupportMessage(){
+  if(!currentSupportMessage){toast('Mensagem não encontrada.');return;}
+  navigator.clipboard.writeText(currentSupportMessage).then(()=>toast('Aviso copiado')).catch(()=>prompt('Copie o aviso:',currentSupportMessage));
+}
+function refreshFirebaseData(){
+  if(!isFirebaseReady()){toast('A conexão ainda está carregando.');return;}
+  subscribeWeekBookings();
+  if(admin)ensureAdminNotifications();
+  syncMyReservationsFromFirestore().catch(()=>{});
+  toast('Dados atualizados.');
+}
+function sendSupportWhatsapp(){
+  if(!currentSupportMessage){toast('Mensagem não encontrada.');return;}
+  window.open(`https://wa.me/${SUPPORT_PHONE}?text=${encodeURIComponent(currentSupportMessage)}`,'_blank');
+}
+
+async function toggleAdmin(){
+  if(admin){clearAdminSession();render();toast('Gestão fechada');return}
+  try{
+    toast('Escolha a conta Google da gestão...');
+    await requireAdminLogin();
+    admin=true;
+    closeModal('adminModal');
+    render();
+    toast('Gestão liberada');
+  }catch(e){
+    console.warn(e);
+    if(e&&String(e.message||'').includes('Abrindo login'))return;
+    toast(e&&e.message?e.message:'Acesso restrito à gestão.');
+  }
+}
+async function loginAdmin(){
+  try{
+    toast('Escolha a conta Google da gestão...');
+    await requireAdminLogin();
+    admin=true;
+    closeModal('adminModal');
+    render();
+    toast('Gestão liberada');
+  }catch(e){
+    console.warn(e);
+    if(e&&String(e.message||'').includes('Abrindo login'))return;
+    toast(e&&e.message?e.message:'Acesso restrito à gestão.');
+  }
+}
+function openEditCounts(){let html='';state.shifts.forEach(s=>{html+=`<div class="edit-row"><b>${esc(s.client)} · ${esc(s.time)}</b><div class="edit-days">`;DAYS.forEach(([d])=>html+=`<div><label>${DAY_SHORT[d]}</label><input id="edit_${s.id}_${d}" type="number" min="0" max="60" value="${Number(s.slots[d]||0)}"></div>`);html+=`</div></div>`});document.getElementById('editTable').innerHTML=html;openModal('editModal')}
+async function saveCounts(){let adjusted=false;state.shifts.forEach(s=>DAYS.forEach(([d])=>{let n=Math.max(0,parseInt(document.getElementById(`edit_${s.id}_${d}`).value||'0',10));const filled=count(s.id,d).f;if(n<filled){n=filled;adjusted=true;}s.slots[d]=n;}));try{await saveShiftConfigOnline();save(false);closeModal('editModal');render();toast(adjusted?'Vagas salvas. Mantive o mínimo das reservas já feitas.':'Vagas atualizadas')}catch(e){console.warn(e);toast('Não consegui salvar as vagas. Tente novamente.')}}
+function copySummary(){let lines=['*Agenda Osasco Express*',''];DAYS.forEach(([d,n])=>{lines.push('*'+n+'*');state.shifts.forEach(s=>{const c=count(s.id,d);if(c.total<=0)return;lines.push(`${s.client} · ${s.time}: ${c.f}/${c.total}`);for(let i=1;i<=c.total;i++){const b=booking(s.id,d,i);lines.push(`${b?'✅':'⬜'} ${i}. ${b?b.name:'vaga aberta'}`)}});lines.push('')});navigator.clipboard.writeText(lines.join('\n')).then(()=>toast('Resumo copiado')).catch(()=>prompt('Copie:',lines.join('\n')))}
+function openModal(id){ensureModalCloseButtons();const el=document.getElementById(id);if(!el)return;el.classList.add('on');document.body.classList.add('modal-open')}function closeModal(id){const el=document.getElementById(id);if(el)el.classList.remove('on');if(!document.querySelector('.modal.on'))document.body.classList.remove('modal-open')}document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModal(m.id)}));document.addEventListener('keydown',e=>{if(e.key==='Escape')closeTopModal()});
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('on');clearTimeout(t._timer);t._timer=setTimeout(()=>t.classList.remove('on'),1900)}
+function dayName(k){return (DAYS.find(x=>x[0]===k)||['',k])[1]}function short(s){return String(s).replace('Pastel da Camila','Camila').replace('Pastel da Drica','Drica').replace('Fratelli Gourmet','Fratelli').replace('Meridio Pizza','Meridio')}function esc(s){return String(s??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]))}function escAttr(s){return esc(s).replace(/`/g,'&#96;')}
+function bootCacheGuard(){
+  try{
+    const seen=localStorage.getItem('oe_reservas_app_version');
+    if(seen!==APP_VERSION){
+      localStorage.setItem('oe_reservas_app_version',APP_VERSION);
+      if('caches' in window)caches.keys().then(keys=>keys.forEach(k=>caches.delete(k))).catch(()=>{});
+      if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())).catch(()=>{});
+      const flag='oe_reloaded_'+APP_VERSION;
+      const url=new URL(location.href);
+      if(!sessionStorage.getItem(flag)&&url.searchParams.get('v')!==APP_VERSION){
+        sessionStorage.setItem(flag,'1');
+        url.searchParams.set('v',APP_VERSION);
+        location.replace(url.toString());
+        return false;
+      }
+    }
+  }catch(e){}
+  return true;
+}
+if(bootCacheGuard()){ensureModalCloseButtons();load();initFirebase();render();}
+
+</script>
+</body>
+</html>
