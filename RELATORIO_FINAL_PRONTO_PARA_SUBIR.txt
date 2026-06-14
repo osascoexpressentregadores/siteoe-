@@ -1,0 +1,36 @@
+RELATÓRIO FINAL — OSASCO EXPRESS SITE PRONTO PARA SUBIR
+
+Base usada: BACKUP_SEGURO_OSASCO_EXPRESS_VERSAO_CONGELADA_BORDO_2026-06-12.zip
+Decisão técnica: CSS bordô congelado preservado. Correções aplicadas somente para deixar o site publicável no domínio raiz.
+
+Correções aplicadas:
+- links internos migrados de /siteoepremiun/ para /
+- canonicals, OG URLs, JSON-LD, robots e sitemap ajustados para https://osascoexpress.com.br
+- CNAME criado com osascoexpress.com.br
+- .nojekyll preservado/criado
+- /agenda/ preservada e bloqueada no robots.txt
+- _headers e _redirects criados para publicação estática
+- horário de suporte ajustado para parceiros: 10h às 20h
+- CSS base congelado preservado sem recriação visual
+
+Validação local:
+- páginas HTML encontradas: 65
+- links internos quebrados: 0
+- assets ausentes: 0
+- referências antigas siteoepremiun: 0
+- termos desalinhados/proibidos: 0
+- SHA256 assets/css/style.css: e3c9c6f4dc0b43466963e083253425b92e4dfaa6b2482a7bedab87e3c0707d38
+
+Links quebrados:
+[]
+
+Assets ausentes:
+[]
+
+Arquivos com referência antiga:
+[]
+
+Termos desalinhados:
+[]
+
+Observação: as ocorrências de “escala obrigatória” aparecem apenas em contexto de proteção, como “não garante escala obrigatória”, e foram mantidas por segurança operacional/jurídica.
