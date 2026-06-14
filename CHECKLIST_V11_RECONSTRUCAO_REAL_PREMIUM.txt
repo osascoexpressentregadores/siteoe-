@@ -1,0 +1,11 @@
+CHECKLIST V11 — Reconstrução Real Premium
+
+[OK] V10 não foi usada como direção visual final.
+[OK] Método WR aplicado: clareza comercial, estrutura simples, cards funcionais, CTA visível.
+[OK] Telas aprovadas usadas como contrato visual: escuro premium, bordô, branco quente, cards claros, hero com imagem à direita.
+[OK] Copy aprovada aplicada por página, adaptada para tela.
+[OK] Sem termos genéricos perigosos: frota própria, App Store, Google Play, números inventados.
+[OK] Comercial e suporte separados.
+[OK] Agenda preservada sem reescrever lógica.
+[OK] Caminhos relativos para abrir localmente após descompactar.
+[OK] HTML/CSS/JS nativo, sem framework.
