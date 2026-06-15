@@ -1,0 +1,4 @@
+V16 PRE-FLIGHT OK REVALIDADO
+HTML: 17
+assets ausentes: 0
+links quebrados: 0
